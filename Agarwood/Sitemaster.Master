@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Sitemaster.master.cs" Inherits="Agarwood.Sitemaster" %>
+
+<!DOCTYPE html>
+
+<html>
+
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="Title" runat="server">
+    </asp:ContentPlaceHolder>
+    </title>
+      <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/masterpage.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body runat="server">
+<div id="page">
+<div id="header">
+<h1>
+    <asp:ContentPlaceHolder ID="Heading1" runat="server">
+
+        <img src="arabian oud images/title.png" class="main-logo" alt="go-to-homepage"/>
+    </asp:ContentPlaceHolder>
+
+</h1>
+
+</div>
+
+<div id="menu">
+<div class="topnav">
+  <a href="~/Default.aspx" runat="server">Home</a>
+  <a href="#news" >About</a>
+  <a href="~/Product.aspx" runat="server">Product</a>
+  <a href="#about">Contact</a>
+</div>
+
+<div id="content">
+
+    <asp:ContentPlaceHolder ID="Heading2" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+</div>
+</div>
+
+    <footer>
+
+    </footer>
+    <p class="info-footer" >copyright 2018</p>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+﻿body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:antiquewhite;
+}
+.main-logo {
+    display: block;
+    width: 100%;
+    height: 300px;
+   
+  
+}
+
+/* ==============navigation menu=================== */
+/* ===============Before================== */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 25px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+        .topnav a:hover {
+            background-color:peru;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color:burlywood;
+            color: white;
+        }
+
+/* ==============After=================== */
+/* =============slideshow==================== */
+#container_home {
+    display: block;
+    margin: 5px auto 0 auto;
+    font-size: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    font-family: 'Scope One', serif;
+}
+.contentpanel {
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+    .slideshow img {
+    height: auto;
+    display: block;
+    max-height: 450px;
+    margin-left: -30px;
+}
+
+img {
+    color: transparent;
+    font-size: 0;
+    vertical-align: middle;
+    height: 263px;
+    width: 276px;
+}
+
+.slidepane {
+    width: 450%;
+    list-style: none;
+    position: relative;
+    overflow-x: hidden;
+    transition: margin 5s;
+    height: auto;
+    -moz-animation: carousel 30s infinite;
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
+    animation-play-state: running;
+}
+
+.slidepane li {
+        margin-left: 50px;
+}
+
+li.product-sale {
+    list-style-type: none;
+    display: inline-block;
+    position: relative;
+    margin: 0.37%;
+}
+.slidepane, li {
+        position: relative;
+        float: left;
+    top: 12px;
+    left: 0px;
+    width: 240px;
+}
+
+
+@keyframes slider {
+
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+
+    #slider figure img {
+        width: 20%;
+        float: left;
+    margin-top: 0px;
+}
+
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        text-align: left;
+        font-size: 0;
+        animation: 20s slider infinite;
+    top: 2px;
+    
+}
+    /*==========product=========*/
+.details {
+    color: #DBD2BB;
+    margin-left:450px;
+    margin-top: -150px;
+}
+.row-fluid:before, .row-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.detailsKind {
+    background: #F6F3EB;
+    color: #1D1D1D;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.details span {
+    display: inline-block;
+    margin-bottom: 1px;
+    min-width: 100px;
+    background: #F6F3EB;
+    color: #1D1D1D;
+    padding: 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+#container {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+}
+element.style {
+    height: 1480px;
+}
+ul#stage {
+    margin: 0px;
+}
+
+ul, ol {
+    padding: 0;
+}
+
+@media (max-width: 979px) and (min-width: 768px) #container li, #container .mask, #container .content {
+    width: 160px; 
+    height: 130px;
+}
+
+#container li {
+    list-style: none outside none;
+    margin: 1.5% 2% 10px 0px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+li {
+    line-height: 20px;
+}
+
+#container img {
+    width: 158px;
+}
+
+#container img {
+    border: 1px solid #EFEDE6;
+    float: left;
+    list-style: none outside none;   
+    display: block;
+    position: relative;
+    transform: scaleY(1);
+    transition: all 0.7s ease-in-out;
+}
+
+/*======footer====*/
+p.info-footer {
+    float: right;
+    text-align: left;
+    font-size: small;
+    clear: both;
+    padding-right: 40px;
+
+}
