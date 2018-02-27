@@ -11,17 +11,6 @@
     </title>
       <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
 
-
-    <style type="text/css">
-        .auto-style1 {
-            margin-left: 40px;
-        }
-        .auto-style2 {
-            margin-left: 320px;
-        }
-    </style>
-
-
 </head>
 
 <body runat="server">

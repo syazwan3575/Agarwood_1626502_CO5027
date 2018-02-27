@@ -9,27 +9,31 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
         <h1>"Bakhoor Oud Rose"</h1>
+    <a href="Product.aspx" runat="server">
+    <p>Back</p></a>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-<div class="column">
+    <div class="row">
+    <div class="column">
     <img src="oud/bakhoor oud rose.jpg" style="width:100%"  class="hover-shadow cursor"> 
   </div>
    <table>
   
   <tr>
-    <td style="width: 200px">Capacity</td>
-    <td>35 Gram</td>
+    <td style="height: 50px">Capacity</td>
+    <td style="height: 50px">35 Gram</td>
     
   </tr>
   <tr>
-    <td style="width: 200px">Family</td>
-    <td>&nbsp;</td>
+    <td style="height: 49px">Family</td>
+    <td style="height: 49px"></td>
     
   </tr>
   <tr>
-    <td style="width: 200px">Ref.No</td>
+    <td>Ref.No</td>
     <td>9889</td>
     
   </tr>
 </table>
+        </div>
 </asp:Content>

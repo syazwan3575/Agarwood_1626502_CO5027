@@ -11,10 +11,13 @@
      <div id="container_home">
         <div id="slider" >
 <figure>
-<img src="images/bakhoor al emarat.jpg" height="300">
-<img src="images/bakhoor anfas.jpg" width="750" height="300">
-<img src="images/bakhoor araisy.jpg" width="750" height="300">
-<img src="images/dubai.jpg" width="750" height="300">
+<img src="images/bakhoor al emarat.jpg">
+        
+<img src="images/bakhoor anfas.jpg" >
+            
+<img src="images/bakhoor araisy.jpg" >
+               
+<img src="images/dubai.jpg" >
 </figure>	
 
 </div>
@@ -24,7 +27,8 @@
     <h2 >Incense Bakhoor/Oud</h2>
  <div class="row">
   <div class="column">
-    <img src="oud/bakhoor oud rose.jpg" style="width:100%"  class="hover-shadow cursor"> <p>bakhoor oud rose</p> <p>$20</p>
+      <a href="BakhoorOudRose.aspx" runat="server">
+    <img src="oud/bakhoor oud rose.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>bakhoor oud rose</p> <p>$20</p>
   </div>
   <div class="column">
     <img src="oud/Bakhoor Sultan Al Oud.jpg" style="width:100%"  class="hover-shadow cursor"> <p>Bakhoor Sultan Al Oud</p> <p>$20</p>
