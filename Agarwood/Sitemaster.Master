@@ -10,7 +10,18 @@
     </asp:ContentPlaceHolder>
     </title>
       <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
-    <link href="CSS/masterpage.css" rel="stylesheet" type="text/css"/>
+
+
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 40px;
+        }
+        .auto-style2 {
+            margin-left: 320px;
+        }
+    </style>
+
+
 </head>
 
 <body runat="server">
@@ -19,19 +30,24 @@
 <h1>
     <asp:ContentPlaceHolder ID="Heading1" runat="server">
 
-        <img src="arabian oud images/title.png" class="main-logo" alt="go-to-homepage"/>
+        <img src="images/title.png" class="main-logo" alt="go-to-homepage"/>
     </asp:ContentPlaceHolder>
 
 </h1>
 
 </div>
 
-<div id="menu">
 <div class="topnav">
-  <a href="~/Default.aspx" runat="server">Home</a>
-  <a href="#news" >About</a>
-  <a href="~/Product.aspx" runat="server">Product</a>
-  <a href="#about">Contact</a>
+    <p class="auto-style1">
+        <div class="auto-style2">
+            <p class="auto-style2" style="margin-left: 40px">
+                <a href="Default.aspx" runat="server">Home</a></p>
+&nbsp;<a href="#news">About</a> 
+            <a href="Product.aspx" runat="server">Product</a> 
+            <a href="#about">Contact</a>
+            <a href="#about">Login</a>
+        </p>
+    </div>
 </div>
 
 <div id="content">
@@ -45,7 +61,7 @@
 </div>
 </div>
 
-    <footer>
+    <footer style="height: 184px; width: 938px; margin-right: 18px; margin-top: 159px">
 
     </footer>
     <p class="info-footer" >copyright 2018</p>

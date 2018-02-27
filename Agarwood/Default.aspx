@@ -4,23 +4,37 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
     <a class:"headlogo">
-        <img src="arabian oud images/title.png" class="main-logo" alt="go-to-homepage" /></a>
+        <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
        
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
      <div id="container_home">
         <div id="slider" >
 <figure>
-<img src="arabian oud images/bakhoor al emarat.jpg" width="900"height="300">
-<img src="arabian oud images/bakhoor anfas.jpg" width="900" height="300">
-<img src="arabian oud images/bakhoor araisy.jpg" width="900" height="300">
-<img src="arabian oud images/dubai.jpg" width="900" height="300">
+<img src="images/bakhoor al emarat.jpg" height="300">
+<img src="images/bakhoor anfas.jpg" width="750" height="300">
+<img src="images/bakhoor araisy.jpg" width="750" height="300">
+<img src="images/dubai.jpg" width="750" height="300">
 </figure>	
 
 </div>
         </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
- 
+    <h2 >Incense Bakhoor/Oud</h2>
+ <div class="row">
+  <div class="column">
+    <img src="oud/bakhoor oud rose.jpg" style="width:100%"  class="hover-shadow cursor"> <p>bakhoor oud rose</p> <p>$20</p>
+  </div>
+  <div class="column">
+    <img src="oud/Bakhoor Sultan Al Oud.jpg" style="width:100%"  class="hover-shadow cursor"> <p>Bakhoor Sultan Al Oud</p> <p>$20</p>
+  </div>
+  <div class="column">
+    <img src="oud/BAKHOOR AL ARAB.jpg" style="width:100%"  class="hover-shadow cursor"> <p>BAKHOOR AL ARAB</p> <p>$20</p>
+  </div>
+     <div class="column">
+    <img src="oud/BAKHOOR AL MAJALIS.jpg" style="width:100%"  class="hover-shadow cursor"> <p>BAKHOOR AL MAJALIS </p> <p>$20</p>
+  </div>
+     </div>
 </asp:Content>
 

@@ -160,8 +160,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="product oud\bakhoor oud rose.jpg" />
-    <Content Include="product oud\Bakhoor Sultan Al Oud.jpg" />
+    <Content Include="oud\BAKHOOR AL ARAB.jpg" />
+    <Content Include="oud\BAKHOOR AL MAJALIS.jpg" />
+    <Content Include="oud\Bakhoor Farhah.jpg" />
+    <Content Include="oud\BAKHOOR MAJOON AL REHAB.jpg" />
+    <Content Include="oud\bakhoor oud rose.jpg" />
+    <Content Include="oud\Bakhoor Sultan Al Oud.jpg" />
+    <Content Include="oud\BAKHOUR ADENI.jpg" />
+    <Content Include="oud\ROYAL BAKHOUR.jpg" />
     <Content Include="Product.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
