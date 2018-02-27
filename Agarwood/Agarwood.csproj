@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="agarwood1.aspx" />
+    <Content Include="BakhoorSultan.aspx" />
     <Content Include="images\arabian_oud_logo.jpg" />
     <Content Include="images\bakhoor al emarat.jpg" />
     <Content Include="images\bakhoor anfas.jpg" />
@@ -219,6 +220,13 @@
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BakhoorSultan.aspx.cs">
+      <DependentUpon>BakhoorSultan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BakhoorSultan.aspx.designer.cs">
+      <DependentUpon>BakhoorSultan.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BakhoorOudRose.aspx.cs">
       <DependentUpon>BakhoorOudRose.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
