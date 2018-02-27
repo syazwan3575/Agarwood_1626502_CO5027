@@ -178,7 +178,39 @@ li.product-sale {
     top: 2px;
     
 }
-    /*==========product=========*/
+    /*==========product rates=========*/
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+        content: "\2605";
+        position: absolute;
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.rating > span {
+        display: inline-block;
+        position: relative;
+        width: 1.5em;
+        height: 45px;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+            content: "\2605";
+            position: absolute;
+}
+/*==========product=========*/
 .caption-container {
     text-align: center;
     background-color: black;

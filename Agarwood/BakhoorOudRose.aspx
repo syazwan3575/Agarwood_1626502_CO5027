@@ -25,8 +25,12 @@
     
   </tr>
   <tr>
-    <td style="height: 49px">Family</td>
-    <td style="height: 49px"></td>
+    <td style="height: 49px">Rates</td>
+    <td>
+        <div class="rating">
+<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
+    </td>
     
   </tr>
   <tr>
