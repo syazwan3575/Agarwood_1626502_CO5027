@@ -11,13 +11,14 @@
      <div id="container_home">
         <div id="slider" >
 <figure>
-<img src="images/bakhoor al emarat.jpg">
-        
-<img src="images/bakhoor anfas.jpg" >
-            
-<img src="images/bakhoor araisy.jpg" >
-               
-<img src="images/dubai.jpg" >
+    <div class="slide">
+<img src="images/bakhoor al emarat.jpg"></div>
+        <div class="slide">
+<img src="images/bakhoor anfas.jpg" ></div>
+          <div class="slide">  
+<img src="images/bakhoor araisy.jpg" ></div>
+          <div class="slide">     
+<img src="images/dubai.jpg" ></div>
 </figure>	
 
 </div>
