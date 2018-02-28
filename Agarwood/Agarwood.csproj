@@ -129,6 +129,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="agarwood1.aspx" />
+    <Content Include="AlArab.aspx" />
     <Content Include="BakhoorSultan.aspx" />
     <Content Include="images\arabian_oud_logo.jpg" />
     <Content Include="images\bakhoor al emarat.jpg" />
@@ -217,6 +218,13 @@
     </Compile>
     <Compile Include="agarwood1.aspx.designer.cs">
       <DependentUpon>agarwood1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlArab.aspx.cs">
+      <DependentUpon>AlArab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlArab.aspx.designer.cs">
+      <DependentUpon>AlArab.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
