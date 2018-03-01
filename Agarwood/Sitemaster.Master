@@ -10,7 +10,6 @@
     </asp:ContentPlaceHolder>
     </title>
       <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -28,15 +27,18 @@
 </div>
 
 <div class="topnav">
+     <div class="auto-style2">
     <p class="auto-style1">
-        <div class="auto-style2">
-            <p class="auto-style2" style="margin-left: 40px">
-                <a href="Default.aspx" runat="server">Home</a></p>
-&nbsp;<a href="#news">About</a> 
-            <a href="Product.aspx" runat="server">Product</a> 
-            <a href="#about">Contact</a>
-            <a href="#about">Login</a>
-        </p>
+       
+            
+                <a href="Default.aspx" runat="server">Home</a>
+                <a href="#news">About</a>
+                <a href="Product.aspx" runat="server">Product</a>
+                <a href="#about">Contact</a>
+                <a href="#about">Login</a>
+           </p> 
+        </div>  
+    
     </div>
 </div>
 
@@ -49,7 +51,7 @@
     </asp:ContentPlaceHolder>
 
 </div>
-</div>
+
 
     <footer style="height: 184px; width: 938px; margin-right: 18px; margin-top: 159px">
 

@@ -26,21 +26,25 @@
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <h2 >Incense Bakhoor/Oud</h2>
+
  <div class="row">
   <div class="column">
       <a href="BakhoorOudRose.aspx" runat="server">
     <img src="oud/bakhoor oud rose.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>bakhoor oud rose</p> <p>$20</p>
   </div>
-     <a href="BakhoorSultan.aspx" runat="server">
+  
   <div class="column">
+      <a href="BakhoorSultan.aspx" runat="server">
     <img src="oud/Bakhoor Sultan Al Oud.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhoor Sultan Al Oud</p> <p>$20</p>
   </div>
-         <a href="AlArab.aspx" runat="server">
+    
   <div class="column">
+      <a href="AlArab.aspx" runat="server">
     <img src="oud/BAKHOOR AL ARAB.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>BAKHOOR AL ARAB</p> <p>$20</p>
   </div>
-             <a href="#" runat="server">
+      
      <div class="column">
+          <a href="#" runat="server">
     <img src="oud/BAKHOOR AL MAJALIS.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>BAKHOOR AL MAJALIS </p> <p>$20</p>
   </div>
      </div>
