@@ -128,9 +128,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Adeni.aspx" />
     <Content Include="agarwood1.aspx" />
     <Content Include="AlArab.aspx" />
+    <Content Include="AlMajalis.aspx" />
     <Content Include="BakhoorSultan.aspx" />
+    <Content Include="Farhah.aspx" />
     <Content Include="images\arabian_oud_logo.jpg" />
     <Content Include="images\bakhoor al emarat.jpg" />
     <Content Include="images\bakhoor anfas.jpg" />
@@ -162,6 +165,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Majoon.aspx" />
     <Content Include="oud\BAKHOOR AL ARAB.jpg" />
     <Content Include="oud\BAKHOOR AL MAJALIS.jpg" />
     <Content Include="oud\Bakhoor Farhah.jpg" />
@@ -171,6 +175,7 @@
     <Content Include="oud\BAKHOUR ADENI.jpg" />
     <Content Include="oud\ROYAL BAKHOUR.jpg" />
     <Content Include="Product.aspx" />
+    <Content Include="Royal.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -212,6 +217,13 @@
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Adeni.aspx.cs">
+      <DependentUpon>Adeni.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adeni.aspx.designer.cs">
+      <DependentUpon>Adeni.aspx</DependentUpon>
+    </Compile>
     <Compile Include="agarwood1.aspx.cs">
       <DependentUpon>agarwood1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -225,6 +237,13 @@
     </Compile>
     <Compile Include="AlArab.aspx.designer.cs">
       <DependentUpon>AlArab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlMajalis.aspx.cs">
+      <DependentUpon>AlMajalis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlMajalis.aspx.designer.cs">
+      <DependentUpon>AlMajalis.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -256,8 +275,22 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Farhah.aspx.cs">
+      <DependentUpon>Farhah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farhah.aspx.designer.cs">
+      <DependentUpon>Farhah.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Majoon.aspx.cs">
+      <DependentUpon>Majoon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Majoon.aspx.designer.cs">
+      <DependentUpon>Majoon.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
@@ -267,6 +300,13 @@
       <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Royal.aspx.cs">
+      <DependentUpon>Royal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Royal.aspx.designer.cs">
+      <DependentUpon>Royal.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

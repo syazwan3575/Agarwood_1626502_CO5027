@@ -29,19 +29,19 @@
     <img src="oud/BAKHOOR AL ARAB.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>BAKHOOR AL ARAB</p> <p>$20</p>
   </div>
   <div class="column">
-      <a href="#" runat="server">
+      <a href="AlMajalis.aspx" runat="server">
     <img src="oud/BAKHOOR AL MAJALIS.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>BAKHOOR AL MAJALIS </p> <p>$20</p>
   </div>
      <div class="column">
-         <a href="#" runat="server">
+         <a href="Farhah.aspx" runat="server">
     <img src="oud/Bakhoor Farhah.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>Bakhoor Farhah</p> <p>$20</p>
   </div>
      <div class="column">
-         <a href="#" runat="server">
+         <a href="Majoon.aspx" runat="server">
     <img src="oud/BAKHOOR MAJOON AL REHAB.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>BAKHOOR MAJOON AL REHAB</p> <p>$20</p>
   </div>
     <div class="column">
-        <a href="#" runat="server">
+        <a href="Adeni.aspx" runat="server">
     <img src="oud/BAKHOUR ADENI.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>BAKHOUR ADENI</p> <p>$20</p>
   </div>
     <div class="column">

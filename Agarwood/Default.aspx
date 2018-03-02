@@ -44,7 +44,7 @@
   </div>
       
      <div class="column">
-          <a href="#" runat="server">
+          <a href="AlMajalis.aspx" runat="server">
     <img src="oud/BAKHOOR AL MAJALIS.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>BAKHOOR AL MAJALIS </p> <p>$20</p>
   </div>
      </div>
