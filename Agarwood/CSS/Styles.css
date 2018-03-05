@@ -461,16 +461,9 @@ input[type=submit] {
 }
 
 }
-#map {
-    width: 100%;
-    height: 460px;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    margin-left: 250px;
-}
-    #map .iframe {
-        margin-left: 250px;
-    }
+/*========map======*/
+
+
     /*======footer====*/
     .footer {
         margin-top: 50px;

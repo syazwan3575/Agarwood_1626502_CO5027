@@ -165,7 +165,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\Map.js" />
     <Content Include="Login.aspx" />
     <Content Include="Majoon.aspx" />
     <Content Include="oud\BAKHOOR AL ARAB.jpg" />
