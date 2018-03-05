@@ -10,6 +10,7 @@
     </asp:ContentPlaceHolder>
     </title>
       <link href="CSS/Styles.css" rel="stylesheet" type="text/css" />
+      
 
 </head>
 
@@ -30,7 +31,7 @@
      <div class="auto-style2">
     <p class="auto-style1">
                 <a href="~/Default.aspx" runat="server">Home</a>
-                <a href="#news" runat="server">About</a>
+                <a href="~/About.aspx" runat="server">About</a>
                 <a href="~/Product.aspx" runat="server">Product</a>
                 <a href="#about" runat="server">Contact</a>
                 <a href="~/Login.aspx" runat="server">Login</a>
