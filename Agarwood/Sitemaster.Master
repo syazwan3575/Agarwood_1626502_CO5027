@@ -13,7 +13,7 @@
 
 </head>
 
-<body runat="server">
+<body runat="server" style="height: 388px">
 <div id="page">
 <div id="header">
 <h1>
@@ -29,13 +29,11 @@
 <div class="topnav">
      <div class="auto-style2">
     <p class="auto-style1">
-       
-            
-                <a href="Default.aspx" runat="server">Home</a>
-                <a href="#news">About</a>
-                <a href="Product.aspx" runat="server">Product</a>
-                <a href="#about">Contact</a>
-                <a href="#about">Login</a>
+                <a href="~/Default.aspx" runat="server">Home</a>
+                <a href="#news" runat="server">About</a>
+                <a href="~/Product.aspx" runat="server">Product</a>
+                <a href="#about" runat="server">Contact</a>
+                <a href="~/Login.aspx" runat="server">Login</a>
            </p> 
         </div>  
     
@@ -53,10 +51,15 @@
 </div>
 
 
-    <footer style="height: 184px; width: 938px; margin-right: 18px; margin-top: 159px">
+    <footer>
+        <div class="footer">
+          
+     <p class="info-footer" >@2018 Muhammd Nur Syazwan 1626502</p>
+           
+        </div>
 
     </footer>
-    <p class="info-footer" >copyright 2018</p>
+    
 </body>
 
 </html>

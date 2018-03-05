@@ -13,18 +13,19 @@
 <figure>
     <div class="slide">
 <img src="images/bakhoor al emarat.jpg"></div>
-        <div class="slide">
-<img src="images/bakhoor anfas.jpg" ></div>
-          <div class="slide">  
-<img src="images/bakhoor araisy.jpg" ></div>
-          <div class="slide">     
-<img src="images/dubai.jpg" ></div>
+    <div class="slide">
+<img src="images/bakhoor anfas.jpg"></div>
+    <div class="slide">  
+<img src="images/bakhoor araisy.jpg"></div>
+    <div class="slide">     
+<img src="images/dubai.jpg"></div>
 </figure>	
 
 </div>
         </div>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="main-content">
     <h2 >Incense Bakhoor/Oud</h2>
 
  <div class="row">
@@ -48,5 +49,6 @@
     <img src="oud/BAKHOOR AL MAJALIS.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>BAKHOOR AL MAJALIS </p> <p>$20</p>
   </div>
      </div>
+        </div>
 </asp:Content>
 

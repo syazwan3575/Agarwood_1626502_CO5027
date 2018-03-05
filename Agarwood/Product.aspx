@@ -13,8 +13,8 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="main-content">
     <h2>Incense Bakhoor/Oud</h2>
-
 <div class="row">
   <div class="column">
       <a href="BakhoorOudRose.aspx" runat="server">
@@ -45,8 +45,9 @@
     <img src="oud/BAKHOUR ADENI.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>BAKHOUR ADENI</p> <p>$20</p>
   </div>
     <div class="column">
-        <a href="#" runat="server">
+        <a href="Royal.aspx" runat="server">
     <img src="oud/ROYAL BAKHOUR.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>ROYAL BAKHOUR</p> <p>$20</p>
   </div>
 </div>
+        </div>
 </asp:Content>

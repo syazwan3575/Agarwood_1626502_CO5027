@@ -12,6 +12,7 @@
     <p>Back</p></a>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="main-content">
      <div class="row">
     <div class="column">
     <img src="oud/Bakhoor Sultan Al Oud.jpg" style="width:100%"  class="hover-shadow cursor"> 
@@ -35,8 +36,13 @@
   <tr>
     <td>Ref.No</td>
     <td>9889</td>
+  </tr>
+         <tr>
+    <td>Price</td>
+    <td>9889</td>
     
   </tr>
 </table>
+        </div>
         </div>
 </asp:Content>
