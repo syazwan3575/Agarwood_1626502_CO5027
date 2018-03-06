@@ -27,7 +27,11 @@
            <asp:Literal ID="litResult" runat="server"></asp:Literal>
         </p>
     </form>
-    <div id="map"></div>
+    
+</asp:Content>
+
+      <asp:Content ID="Content5" runat="server"  ContentPlaceHolderID="GoogleMap">
+        <div id="map"></div>
     <script>
         var map;
         function initMap() {
@@ -37,5 +41,5 @@
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCdE36938soUfZj1Q3zN1ks2Hu-l6wRSs&callback=initMap" async defer></script>
-</asp:Content>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCdE36938soUfZj1Q3zN1ks2Hu-l6wRSs&callback=initMap" async defer></script>  
+    </asp:Content>
