@@ -8,21 +8,50 @@
        
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
-     <div id="container_home">
-        <div id="slider" >
-<figure>
-    <div class="slide">
-<img src="images/bakhoor al emarat.jpg"></div>
-    <div class="slide">
-<img src="images/bakhoor anfas.jpg"></div>
-    <div class="slide">  
-<img src="images/bakhoor araisy.jpg"></div>
-    <div class="slide">     
-<img src="images/dubai.jpg"></div>
-</figure>	
+ 
+        <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/bakhoor al emarat.jpg" >
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/bakhoor anfas.jpg" >
 
 </div>
-        </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/sabaya bakhoor.jpg"></div>
+</div>
+
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <div class="main-content">

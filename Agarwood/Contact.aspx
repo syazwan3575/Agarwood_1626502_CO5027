@@ -14,11 +14,13 @@
     <form id="form1" runat="server">
         <p>
             <asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
-            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject"></asp:TextBox>
+            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject">type</asp:TextBox>
+            <asp:RequiredFieldValidator ID="reqSubjectField" runat="server" ControlToValidate="txtSubject" ErrorMessage="enter your subject"></asp:RequiredFieldValidator>
         </p>
         <p>
            <asp:Label ID="lblBody" runat="server" Text="Body"></asp:Label>
            <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="reqBodyField" runat="server" ControlToValidate="txtBody" ErrorMessage="enter your body"></asp:RequiredFieldValidator>
         </p>
         <p>
            <asp:Button ID="btnSendEmail" runat="server" Text="Send Email" placeholder="Your Message" OnClick="btnSendEmail_Click"/>
@@ -33,13 +35,19 @@
       <asp:Content ID="Content5" runat="server"  ContentPlaceHolderID="GoogleMap">
         <div id="map"></div>
     <script>
-        var map;
+
         function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
+            var uluru = { lat: 4.885724, lng: 114.931654 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 20,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
             });
         }
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCdE36938soUfZj1Q3zN1ks2Hu-l6wRSs&callback=initMap" async defer></script>  
     </asp:Content>
