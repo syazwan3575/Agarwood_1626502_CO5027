@@ -49,5 +49,10 @@ namespace Agarwood
                 litResult.Text = "Send failed: " + ex.Message + ":" + ex.InnerException + "";
             }     
         }
+
+        protected void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

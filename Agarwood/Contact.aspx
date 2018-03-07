@@ -12,15 +12,23 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
 
     <form id="form1" runat="server">
+        <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+        <p>
+            <asp:Label ID="Email" runat="server" Text="Email"></asp:Label>
+            <asp:TextBox ID="txtEmail" runat="server" OnTextChanged="txtEmail_TextChanged"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="ValidEmail" runat="server" ErrorMessage="Email Is Not Valid" ControlToValidate="txtEmail" Display="None" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+        &nbsp;&nbsp;&nbsp;
+            <asp:RequiredFieldValidator ID="reqEmailField" runat="server" ControlToValidate="txtEmail" Display="None" ErrorMessage="Email is Required"></asp:RequiredFieldValidator>
+        </p>
         <p>
             <asp:Label ID="lblSubject" runat="server" Text="Subject"></asp:Label>
-            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject">type</asp:TextBox>
-            <asp:RequiredFieldValidator ID="reqSubjectField" runat="server" ControlToValidate="txtSubject" ErrorMessage="enter your subject"></asp:RequiredFieldValidator>
+            <asp:TextBox ID="txtSubject" runat="server" placeholder="Subject"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="reqSubjectField" runat="server" ControlToValidate="txtSubject" ErrorMessage="please enter your subject" Display="None"></asp:RequiredFieldValidator>
         </p>
         <p>
            <asp:Label ID="lblBody" runat="server" Text="Body"></asp:Label>
            <asp:TextBox ID="txtBody" runat="server" TextMode="MultiLine"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="reqBodyField" runat="server" ControlToValidate="txtBody" ErrorMessage="enter your body"></asp:RequiredFieldValidator>
+            <asp:RequiredFieldValidator ID="reqBodyField" runat="server" ControlToValidate="txtBody" ErrorMessage="please enter your body" Display="None"></asp:RequiredFieldValidator>
         </p>
         <p>
            <asp:Button ID="btnSendEmail" runat="server" Text="Send Email" placeholder="Your Message" OnClick="btnSendEmail_Click"/>
