@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agarwood", "Agarwood\Agarwood.csproj", "{E9D5BED1-CA87-4158-8824-E5A8CED12343}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Agarwood_1626502_CO5027", "Agarwood\Agarwood_1626502_CO5027.csproj", "{E9D5BED1-CA87-4158-8824-E5A8CED12343}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
