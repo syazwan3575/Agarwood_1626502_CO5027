@@ -41,7 +41,7 @@
 </asp:Content>
 
       <asp:Content ID="Content5" runat="server"  ContentPlaceHolderID="GoogleMap">
-        <div id="map"></div>
+          <div id="map" style="width: 626px"></div>
     <script>
 
         function initMap() {
