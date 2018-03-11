@@ -12,18 +12,18 @@
         <div class="slideshow-container">
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
-  <img src="images/bakhoor al emarat.jpg" class="slider" >
+  <img src="images/bakhoor al emarat.jpg" >
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
-  <img src="images/bakhoor anfas.jpg" class="slider">
+  <img src="images/bakhoor anfas.jpg" >
 
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
-  <img src="images/sabaya bakhoor.jpg" class="slider"></div>
+  <img src="images/sabaya bakhoor.jpg" ></div>
 </div>
 
 
