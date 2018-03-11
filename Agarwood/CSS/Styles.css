@@ -73,10 +73,11 @@ h2{
     position: relative;
    
 }
-    .slideshow-container img {
+.slideshow-container img {
         height: 500px;
         width: 1000px;
-    }
+        margin-left: 145px;
+}
     /* Caption text */
     .text {
         color: #f2f2f2;
