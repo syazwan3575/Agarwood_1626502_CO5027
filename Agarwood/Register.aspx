@@ -13,8 +13,9 @@
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
         <asp:TextBox ID="txtRegPassword" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
         <br />
-        <asp:Button ID="Reg" runat="server" Text="btnReg" />
+        <asp:Button ID="btnReg" runat="server" Text="Register" />
         <br />
         <asp:Literal ID="litRegisterError" runat="server"></asp:Literal>
     </form>

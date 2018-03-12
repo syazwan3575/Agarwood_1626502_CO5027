@@ -7,6 +7,7 @@
     font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
 }
 .main-content{
+    margin-top: 200px;
     height:900px;
 }
 .main-logo {
@@ -74,9 +75,9 @@ h2{
    
 }
 .slideshow-container img {
-        height: 500px;
+        height: 300px;
         width: 1000px;
-        margin-left: 145px;
+        margin-left: 140px;
 }
     /* Caption text */
     .text {

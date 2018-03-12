@@ -9,7 +9,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
  
-        <div class="slideshow-container">
+        <div class="slideshow-container" style="left: 0px; top: 0px; height: 50px">
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="images/bakhoor al emarat.jpg" >

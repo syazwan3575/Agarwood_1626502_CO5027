@@ -58,13 +58,13 @@ namespace Agarwood {
         protected global::System.Web.UI.WebControls.TextBox txtRegPassword;
         
         /// <summary>
-        /// Reg control.
+        /// btnReg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Reg;
+        protected global::System.Web.UI.WebControls.Button btnReg;
         
         /// <summary>
         /// litRegisterError control.
