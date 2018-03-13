@@ -42,7 +42,7 @@ namespace Agarwood
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-            authenticationManager.SignIn(new Microsoft.Owin.Security.AuthenticationProperties() { }, userIdentity);
+            authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
             //Note: user is automatically redirected if trying to access another page
         }
     }
