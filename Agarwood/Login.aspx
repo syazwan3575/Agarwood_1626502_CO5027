@@ -1,33 +1,27 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sitemaster.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Agarwood.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-        The Scent of Oud
+            The Scent of Oud
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
-    <a class:"headlogo">
+        <a class:"headlogo">
         <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
-    <h2>Login Form</h2>
+    <form id="form1" runat="server" style="height: 221px">
+    </form>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    <section class="container">
-    <div class="login">
-      <h1 class="login-head">Please Login</h1>
-      <form method="post" action="#">
-        <p class="user-p"><input type="text" name="login" value="" placeholder="Username"></p>
-        <p class="user-p" ><input type="password" name="password" value="" placeholder="Password"></p>
-        <p class="remember_me">
-          <label>
-            <input type="checkbox" name="remember_me" id="remember_me">
-            Remember me
-          </label>
-        </p>
-        <p class="submit"><input type="submit" name="commit" value="Login"></p>
-      </form>
-    </div>
 
-    <div class="login-help">
-      <p class="user-p">Forgot your password? <a href="#">Click here to reset it</a>.</p>
-    </div>
-  </section>
+    <asp:Label ID="Label1" runat="server" Text="Email"></asp:Label>
+    <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
+    <br />
+    <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
+    <asp:TextBox ID="txtLoginPassword" runat="server"></asp:TextBox>
+    <br />
+    <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
+    <br />
+    <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
+
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

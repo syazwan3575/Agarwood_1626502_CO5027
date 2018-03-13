@@ -196,7 +196,6 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
-    <Content Include="Login1.aspx" />
     <Content Include="Majoon.aspx" />
     <Content Include="oud\BAKHOOR AL ARAB.jpg" />
     <Content Include="oud\BAKHOOR AL MAJALIS.jpg" />
@@ -327,13 +326,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login1.aspx.cs">
-      <DependentUpon>Login1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login1.aspx.designer.cs">
-      <DependentUpon>Login1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Majoon.aspx.cs">
       <DependentUpon>Majoon.aspx</DependentUpon>
