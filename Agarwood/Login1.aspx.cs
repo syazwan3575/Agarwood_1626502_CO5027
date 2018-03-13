@@ -25,7 +25,7 @@ namespace Agarwood
             var user = usermanager.Find(txtLoginEmail.Text, txtLoginPassword.Text);
             if(user != null)
             {
-                LogUserIn();
+                LogUserIn(userManager, user);
             }
             else
             {
@@ -35,7 +35,7 @@ namespace Agarwood
        private void LogUserIn(UserManager<IdentityUser>userManager, IdentityUser user) { 
             var authenticationmanager = HttpContext.Current.GetOwinContext().Authentication;
             var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-            var authenticationManager.SignIn(new Microsoft.Owin.Security.AuthenticationProperties() { }, userIdentity);
-                }
+             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
+       }
     }
 }
