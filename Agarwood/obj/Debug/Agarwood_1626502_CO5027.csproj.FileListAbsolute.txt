@@ -43,3 +43,7 @@ C:\Users\user\source\repos\Agarwood\Agarwood\obj\Debug\Agarwood_1626502_CO5027.c
 C:\Users\user\source\repos\Agarwood\Agarwood\obj\Debug\Agarwood_1626502_CO5027.csproj.CoreCompileInputs.cache
 C:\Users\user\source\repos\Agarwood\Agarwood\obj\Debug\Agarwood.dll
 C:\Users\user\source\repos\Agarwood\Agarwood\obj\Debug\Agarwood.pdb
+C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood_1626502_CO5027.csprojResolveAssemblyReference.cache
+C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood_1626502_CO5027.csproj.CoreCompileInputs.cache
+C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood.dll
+C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood.pdb

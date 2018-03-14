@@ -22,13 +22,21 @@ namespace Agarwood {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+<<<<<<< HEAD
         /// Username control.
+=======
+        /// Label1 control.
+>>>>>>> a133b091fb2f0ddd6951b45c8cefeb2b54e13861
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label Username;
+=======
+        protected global::System.Web.UI.WebControls.Label Label1;
+>>>>>>> a133b091fb2f0ddd6951b45c8cefeb2b54e13861
         
         /// <summary>
         /// txtLoginEmail control.
@@ -40,13 +48,21 @@ namespace Agarwood {
         protected global::System.Web.UI.WebControls.TextBox txtLoginEmail;
         
         /// <summary>
+<<<<<<< HEAD
         /// Password control.
+=======
+        /// Label2 control.
+>>>>>>> a133b091fb2f0ddd6951b45c8cefeb2b54e13861
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+<<<<<<< HEAD
         protected global::System.Web.UI.WebControls.Label Password;
+=======
+        protected global::System.Web.UI.WebControls.Label Label2;
+>>>>>>> a133b091fb2f0ddd6951b45c8cefeb2b54e13861
         
         /// <summary>
         /// txtLoginPassword control.
