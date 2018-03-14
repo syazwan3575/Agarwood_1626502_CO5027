@@ -6,6 +6,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="login">
     <form id="form1" runat="server">
         <asp:Label ID="Username" runat="server" Text="Username"></asp:Label>
         <asp:TextBox ID="txtLoginEmail" runat="server"></asp:TextBox>
@@ -17,6 +18,7 @@
         <br />
         <asp:Literal ID="litLoginError" runat="server"></asp:Literal>
     </form>
+        </div>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>
