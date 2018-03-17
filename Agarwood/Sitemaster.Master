@@ -17,7 +17,7 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-          margin-left: 250px;
+        margin-left: 250px;
         height: 100%;
         width: 250px;
       }
@@ -71,7 +71,7 @@
       <asp:ContentPlaceHolder ID="GoogleMap" runat="server" >
           
     </asp:ContentPlaceHolder>
-        <!--Beginning of the footer section of the page-->
+        <!--Beginning of the footer-->
         <footer>
 <div class="footer">
             <p>
@@ -89,7 +89,7 @@
             <a href="http://achecker.ca/checker/?uri=referer" title="Validate WCAG">Check WCAG</a>
           </div>   
 </footer>
-        <!--Ending of the footer section of the page-->
+        <!--Ending of the footer-->
       
 </body>
 

@@ -17,7 +17,7 @@
             <div class="main-product">
     <div class="row">
     <div class="column">
-    <img src="oud/ROYAL BAKHOUR.jpg" style="width:100%"  class="hover-shadow cursor"> 
+    <img src=" style="width:100%"  class="hover-shadow cursor"> 
   </div>
    <table>
   
