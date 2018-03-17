@@ -22,6 +22,11 @@ h2{
 #MainContent{
     height:1090px;
 }
+
+.main-product {
+    margin-top: 20px;
+    height: 900px;
+}
 /* ==============navigation menu=================== */
 /* ===============Before================== */
 .auto-style1 {
@@ -421,17 +426,20 @@ input[type=submit] {
 
 
     /*======footer====*/
-    .footer {
-        margin-top: 50px;
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: dimgrey;
-        color: white;
-        text-align: center;
-        height: 60px;
-    }
+.footer {
+    margin-top: 50px;
+    overflow: hidden;
+    clear: both;
+    text-align: center;
+    padding: 12px 20px 13px 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #b9b070;
+    color: white;
+    text-align: center;
+    height: 160px;
+}
 p.info-footer {
 
     margin-bottom: 5px;

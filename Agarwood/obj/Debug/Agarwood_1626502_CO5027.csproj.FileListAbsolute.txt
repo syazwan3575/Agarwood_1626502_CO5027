@@ -47,3 +47,16 @@ C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood_
 C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood_1626502_CO5027.csproj.CoreCompileInputs.cache
 C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood.dll
 C:\Users\user\Source\Repos\Agarwood_1626502_CO50273\Agarwood\obj\Debug\Agarwood.pdb
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Owin.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.xml
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.xml
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.OAuth.xml
