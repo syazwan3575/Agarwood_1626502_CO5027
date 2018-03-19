@@ -19,8 +19,13 @@ namespace Agarwood
         protected void btnReg_Click(object sender, EventArgs e)
         {
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             var userStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(userStore);
+
+            IdentityRole adminRole = new IdentityRole("Admin");
+            roleManager.Create(adminRole);
 
             var user = new IdentityUser()
             {
@@ -31,7 +36,9 @@ namespace Agarwood
 
             if (result.Succeeded)
             {
-
+                manager.AddToRole(user.Id, "Admin");
+                manager.Update(user);
+                litRegisterError.Text = "Registration Successful";
             }
             else
             {

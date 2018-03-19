@@ -28,10 +28,7 @@ namespace Agarwood
             var user = userManager.Find(txtLoginEmail.Text, txtLoginPassword.Text);
             if (user != null)
             {
-                //todo: log user in / instruct user to log in
-                litLoginError.Text = "Successfully Login";
                 LogUserIn(userManager, user);
-                Server.Transfer("~/admin.aspx", true);
             }
             else
             {
@@ -42,11 +39,7 @@ namespace Agarwood
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
             var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-
             authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
-
-            authenticationManager.SignIn(new Microsoft.Owin.Security.AuthenticationProperties() { }, userIdentity);
-
             //Note: user is automatically redirected if trying to access another page
         }
     }

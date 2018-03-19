@@ -162,6 +162,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Adeni.aspx" />
+    <Content Include="admin\Index.aspx" />
     <Content Include="agarwood1.aspx" />
     <Content Include="AlArab.aspx" />
     <Content Include="AlMajalis.aspx" />
@@ -197,6 +198,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Majoon.aspx" />
@@ -261,6 +263,13 @@
     </Compile>
     <Compile Include="Adeni.aspx.designer.cs">
       <DependentUpon>Adeni.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="agarwood1.aspx.cs">
       <DependentUpon>agarwood1.aspx</DependentUpon>
