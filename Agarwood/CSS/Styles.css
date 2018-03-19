@@ -19,13 +19,18 @@
 h2{
     text-align:center;
 }
+
+.homepage h2 {
+    text-align: center;
+    margin-top: 20px;
+}
 #MainContent{
     height:1090px;
 }
 
 .main-product {
     margin-top: 20px;
-    height: 765px;
+    height: 455px;
 }
 /* ==============navigation menu=================== */
 /* ===============Before================== */
