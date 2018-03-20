@@ -4,8 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
     <a class:"headlogo">
-        <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
-       
+        <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>       
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
     <h1>Welcome to admin panel

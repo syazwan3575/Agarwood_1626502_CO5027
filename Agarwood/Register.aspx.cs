@@ -26,7 +26,6 @@ namespace Agarwood
 
             IdentityRole adminRole = new IdentityRole("Admin");
             roleManager.Create(adminRole);
-
             var user = new IdentityUser()
             {
                 UserName = txtRegEmail.Text,

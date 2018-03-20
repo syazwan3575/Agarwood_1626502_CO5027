@@ -41,7 +41,7 @@
 </asp:Content>
 
       <asp:Content ID="Content5" runat="server"  ContentPlaceHolderID="GoogleMap">
-          <div id="map" style="width: 626px"></div>
+          <div id="map">
     <script>
 
         function initMap() {
@@ -58,4 +58,5 @@
 
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCdE36938soUfZj1Q3zN1ks2Hu-l6wRSs&callback=initMap" async defer></script>  
+              </div>
     </asp:Content>
