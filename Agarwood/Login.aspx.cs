@@ -6,41 +6,43 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Owin.Security;
 
 namespace Agarwood
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Register : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnLogin_Click(object sender, EventArgs e)
+        protected void btnReg_Click(object sender, EventArgs e)
         {
-            Page.Validate("signin");
-
             var identityDbContext = new IdentityDbContext("IdentityConnectionString");
+            var roleStore = new RoleStore<IdentityRole>(identityDbContext);
+            var roleManager = new RoleManager<IdentityRole>(roleStore);
             var userStore = new UserStore<IdentityUser>(identityDbContext);
-            var userManager = new UserManager<IdentityUser>(userStore);
+            var manager = new UserManager<IdentityUser>(userStore);
 
-            var user = userManager.Find(txtLoginEmail.Text, txtLoginPassword.Text);
-            if (user != null)
+            IdentityRole adminRole = new IdentityRole("Admin");
+            roleManager.Create(adminRole);
+            var user = new IdentityUser()
             {
-                LogUserIn(userManager, user);
+                UserName = txtRegEmail.Text,
+                Email = txtRegEmail.Text
+            };
+            IdentityResult result = manager.Create(user, txtRegPassword.Text);
+
+            if (result.Succeeded)
+            {
+                manager.AddToRole(user.Id, "Admin");
+                manager.Update(user);
+                litRegisterError.Text = "Registration Successful";
             }
             else
             {
-                litLoginError.Text = "Invalid username or password.";
+                litRegisterError.Text = "An error has occured:" + result.Errors.FirstOrDefault();
             }
-        }
-        private void LogUserIn(UserManager<IdentityUser> userManager, IdentityUser user)
-        {
-            var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
-            var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
-            authenticationManager.SignIn(new AuthenticationProperties() { }, userIdentity);
-            //Note: user is automatically redirected if trying to access another page
         }
     }
 }

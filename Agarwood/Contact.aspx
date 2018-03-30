@@ -10,7 +10,7 @@
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="login">
+
     <form id="form1" runat="server">
         <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
         <p>
@@ -37,7 +37,7 @@
            <asp:Literal ID="litResult" runat="server"></asp:Literal>
         </p>
     </form>
-    </div>
+
 </asp:Content>
 
       <asp:Content ID="Content5" runat="server"  ContentPlaceHolderID="GoogleMap">

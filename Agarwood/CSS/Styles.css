@@ -263,26 +263,15 @@ tr:nth-child(even) {
     width: 640px;
 }
 
-.login {
-    position: relative;
-    margin: 0 auto;
-    padding: 20px 20px 20px;
-    width: 310px;
-    background: white;
-    border-radius: 3px;
 
-
-
-    content: '';
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    bottom: -8px;
-    left: -8px;
-    z-index: -1;
-    background: red;
-    border-radius: 4px;
+section#first_content, section#second_content {
+    margin-left: 5%;
+    width: 75%;
 }
+    section#first_content h2, section#second_content h2 {
+        font-size: 130%;
+        text-align: center;
+    }
 
 .login-head h1{
     margin: -20px -20px 21px;
@@ -350,14 +339,9 @@ input {
         border-color: #c4c4c4 #d1d1d1 #d4d4d4;
         border-radius: 2px;
         outline: 5px solid #eff4f7;
-
-
     border-color: #7dc9e2;
     outline-color: #dceefc;
     outline-offset: 0;
-  
-
-
 }
 
 input[type=submit] {
@@ -372,18 +356,9 @@ input[type=submit] {
     border-color: #b4ccce #b3c0c8 #9eb9c2;
     border-radius: 16px;
     outline: 0;
-
-
-
-
     background: #cde5ef;
     border-color: #9eb9c2 #b3c0c8 #b4ccce;
-
 }
-
-
-
-
 /*========map======*/
 
 
