@@ -35,9 +35,12 @@ namespace Agarwood
 
             if (result.Succeeded)
             {
+                litRegisterError.Text = "Registration Successful";
+                txtRegEmail.Text = "";
+                txtRegPassword.Text = "";
                 manager.AddToRole(user.Id, "Admin");
                 manager.Update(user);
-                litRegisterError.Text = "Registration Successful";
+                
             }
             else
             {

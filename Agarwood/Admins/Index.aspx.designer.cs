@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Agarwood.admin
+namespace Agarwood.Admins
 {
 
 
-    public partial class List
+    public partial class Index
     {
     }
 }

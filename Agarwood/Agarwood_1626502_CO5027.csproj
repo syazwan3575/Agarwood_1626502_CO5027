@@ -162,9 +162,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Adeni.aspx" />
-    <Content Include="admin\Add.aspx" />
-    <Content Include="admin\Index.aspx" />
-    <Content Include="admin\List.aspx" />
+    <Content Include="Admins\Add.aspx" />
+    <Content Include="Admins\Edit.aspx" />
+    <Content Include="Admins\Index.aspx" />
+    <Content Include="Admins\UploadImage.aspx" />
     <Content Include="agarwood1.aspx" />
     <Content Include="AlArab.aspx" />
     <Content Include="AlMajalis.aspx" />
@@ -199,7 +200,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="admin\Web.config" />
+    <Content Include="Admins\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Majoon.aspx" />
@@ -265,26 +266,33 @@
     <Compile Include="Adeni.aspx.designer.cs">
       <DependentUpon>Adeni.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\Add.aspx.cs">
+    <Compile Include="Admins\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\Add.aspx.designer.cs">
+    <Compile Include="Admins\Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\Index.aspx.cs">
+    <Compile Include="Admins\Edit.aspx.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Edit.aspx.designer.cs">
+      <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\Index.aspx.designer.cs">
+    <Compile Include="Admins\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\List.aspx.cs">
-      <DependentUpon>List.aspx</DependentUpon>
+    <Compile Include="Admins\UploadImage.aspx.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\List.aspx.designer.cs">
-      <DependentUpon>List.aspx</DependentUpon>
+    <Compile Include="Admins\UploadImage.aspx.designer.cs">
+      <DependentUpon>UploadImage.aspx</DependentUpon>
     </Compile>
     <Compile Include="agarwood1.aspx.cs">
       <DependentUpon>agarwood1.aspx</DependentUpon>
@@ -407,6 +415,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admins\ProductImages\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
