@@ -160,7 +160,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="Adeni.aspx" />
     <Content Include="Admins\Add.aspx" />
     <Content Include="Admins\Edit.aspx" />
@@ -200,7 +199,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Admins\Web.config" />
+    <Content Include="Admins\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Login.aspx" />
     <Content Include="Majoon.aspx" />
@@ -252,13 +253,6 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Adeni.aspx.cs">
       <DependentUpon>Adeni.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

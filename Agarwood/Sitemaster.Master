@@ -49,7 +49,6 @@
      <div class="auto-style2">
     <p class="auto-style1">
                 <a href="~/Default.aspx" runat="server">Home</a>
-                <a href="~/About.aspx" runat="server">About</a>
                 <a href="~/Product.aspx" runat="server">Product</a>
                 <a href="~/Contact.aspx" runat="server">Contact</a>
                 <a href="~/Login.aspx" runat="server">Login</a>
