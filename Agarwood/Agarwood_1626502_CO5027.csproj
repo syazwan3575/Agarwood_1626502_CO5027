@@ -164,6 +164,7 @@
     <Content Include="Admins\Add.aspx" />
     <Content Include="Admins\Edit.aspx" />
     <Content Include="Admins\Index.aspx" />
+    <Content Include="Admins\ShoppingCart.aspx" />
     <Content Include="Admins\UploadImage.aspx" />
     <Content Include="agarwood1.aspx" />
     <Content Include="AlArab.aspx" />
@@ -281,6 +282,13 @@
     </Compile>
     <Compile Include="Admins\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ShoppingCart.aspx.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\ShoppingCart.aspx.designer.cs">
+      <DependentUpon>ShoppingCart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admins\UploadImage.aspx.cs">
       <DependentUpon>UploadImage.aspx</DependentUpon>
