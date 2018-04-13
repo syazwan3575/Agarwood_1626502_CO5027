@@ -13,7 +13,7 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="main-content">
+    <div class="main-product">
     <h2>Incense Bakhoor/Oud</h2>
 <div class="row">
   <div class="column">
