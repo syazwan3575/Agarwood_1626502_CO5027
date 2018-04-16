@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Agarwood.Admins {
+namespace Agarwood {
     
     
-    public partial class Edit {
+    public partial class ViewProduct {
         
         /// <summary>
         /// form1 control.

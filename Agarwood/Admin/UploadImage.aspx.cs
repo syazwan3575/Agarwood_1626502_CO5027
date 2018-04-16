@@ -14,7 +14,7 @@ namespace Agarwood.Admins
             string productId = Request.QueryString["Id"];
             string filename = productId + ".jpg";
 
-            CurrentImage.ImageUrl = "~/Admins/ProductImages/" + filename;
+            CurrentImage.ImageUrl = "~/Admin/ProductImages/" + filename;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -22,14 +22,14 @@ namespace Agarwood.Admins
             string productId = Request.QueryString["Id"];
 
             string filename = productId + ".jpg";
-            string saveLocation = Server.MapPath("~/Admins/ProductImages/" + filename);
+            string saveLocation = Server.MapPath("~/Admin/ProductImages/" + filename);
 
             imagefileUploadControl.SaveAs(saveLocation);
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Admins/Add.aspx/");
+            Response.Redirect("~/Admin/Add.aspx/");
         }
     }
 }

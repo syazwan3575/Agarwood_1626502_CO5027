@@ -23,12 +23,12 @@ namespace Agarwood.Admins
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Admins/Add.aspx");
+            Response.Redirect("~/Admin/Add.aspx");
         }
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Admins/UploadImage.aspx");
+            Response.Redirect("~/Admin/UploadImage.aspx");
         }
     }
 }

@@ -13,7 +13,8 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="main-product">
+    <form id="form1" runat="server">
+        <div class="main-product" style="height: 1467px">
     <h2>Incense Bakhoor/Oud</h2>
 <div class="row">
   <div class="column">
@@ -48,6 +49,32 @@
         <a href="Royal.aspx" runat="server">
     <img src="oud/ROYAL BAKHOUR.jpg" style="width:100%"  class="hover-shadow cursor" runat="server"></a> <p>ROYAL BAKHOUR</p> <p>$20</p>
   </div>
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" RepeatColumns="3">
+        <ItemTemplate>
+            <asp:Image ID="Image1" runat="server" Height="143px" ImageUrl='<%# Eval("ProductImage") %>' Width="194px" />
+            <br />
+            ProductName:
+            <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Eval("ProductName") %>' />
+            <br />
+            ProductID:
+            <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
+            <br />
+            ProductDetails:
+            <asp:Label ID="ProductDetailsLabel" runat="server" Text='<%# Eval("ProductDetails") %>' />
+            <br />
+            ProductQuantity:
+            <asp:Label ID="ProductQuantityLabel" runat="server" Text='<%# Eval("ProductQuantity") %>' />
+            <br />
+            ProductPrice:
+            <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Eval("ProductPrice") %>' />
+            <br />
+            <br />
+            <asp:Button ID="Button1" runat="server" style="left: 0px; bottom: -6px; width: 146px; height: 36px" Text="View" />
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626502_co5027_asgConnectionString3 %>" SelectCommand="SELECT * FROM [view product]"></asp:SqlDataSource>
+    <br />
 </div>
         </div>
+    </form>
 </asp:Content>

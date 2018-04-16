@@ -76,11 +76,11 @@
         <footer>
 
             <p>
-                <a href="~/default.aspx" title="Home" runat="server">Home</a> | 
-                <a href="~/products.aspx" title="Products" runat="server">Products</a> | 
-                <a href="~/contactUs.aspx" title="Contact Us" runat="server">Contact Us</a> | 
-                <a href="~/login.aspx" title="Account" runat="server">Account</a> | 
-                <a href="~/manageProduct.aspx" title="Admin" runat="server">Admin</a>
+                <a href="~/Default.aspx" title="Home" runat="server">Home</a> | 
+                <a href="~/Product.aspx" title="Products" runat="server">Products</a> | 
+                <a href="~/Contact.aspx" title="Contact Us" runat="server">Contact Us</a> | 
+                <a href="~/Login.aspx" title="Account" runat="server">Account</a> | 
+                <a href="~/Admin/Add.aspx" title="Admin" runat="server">Admin</a>
 
             </p>
             <p  class="info-footer" >Copyright 2018 &copy; The Scent Of Oud. | All the photographs and informations are belong to their respective owners.</p>

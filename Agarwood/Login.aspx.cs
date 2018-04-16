@@ -49,7 +49,7 @@ namespace Agarwood
 
                 if (userRoles.Equals("Admin"))
                 {
-                    Response.Redirect("~/Admins/Index.aspx");
+                    Response.Redirect("~/Admin/Index.aspx");
                 }
             }
         }
