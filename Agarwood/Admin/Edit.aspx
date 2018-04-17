@@ -1,7 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sitemaster.Master" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="Agarwood.Admins.Edit" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
+        The Scent of Oud
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
+        <a class:"headlogo">
+        <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
@@ -111,7 +114,7 @@
                 <asp:Parameter Name="original_ProductPrice" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource2">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource2" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
                 <asp:BoundField DataField="ProductID" HeaderText="ProductID" ReadOnly="True" SortExpression="ProductID" />
@@ -123,6 +126,7 @@
                         <asp:Image ID="Image2" runat="server" Height="166px" ImageUrl='<%# Eval("ProductImage") %>' Width="162px" />
                     </ItemTemplate>
                 </asp:TemplateField>
+                <asp:CommandField HeaderText="Edit" ShowDeleteButton="True" ShowEditButton="True" ShowHeader="True" />
             </Columns>
             <EmptyDataTemplate>
                 <asp:Image ID="Image1" runat="server" Height="131px" Width="179px" />

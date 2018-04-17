@@ -6,9 +6,12 @@
     height: 100%;
     font: 13px/20px 'Lucida Grande', Tahoma, Verdana, sans-serif;
 }
-.main-content{
+.Productlist{
+    margin-left:250px;
+}
+.main-content {
     margin-top: 250px;
-    height:375px;
+    height: 375px;
 }
 .main-product {
     height: 375px;
@@ -75,6 +78,15 @@ h2{
 /* =============slideshow==================== */
 
 
+#map {
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+    border: 2px solid black;
+    margin: 4px;
+}
 
 .mySlides {
     display: none

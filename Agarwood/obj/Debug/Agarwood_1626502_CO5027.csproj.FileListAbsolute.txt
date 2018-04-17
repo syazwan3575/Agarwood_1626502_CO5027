@@ -61,3 +61,5 @@ C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.xml
 C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.Cookies.xml
 C:\Users\user\source\repos\Agarwood\Agarwood\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\user\source\repos\Agarwood\Agarwood\obj\Debug\Agarwood_1626502_CO5027.csproj.CopyComplete
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\PayPal.dll
+C:\Users\user\source\repos\Agarwood\Agarwood\bin\PayPal.xml

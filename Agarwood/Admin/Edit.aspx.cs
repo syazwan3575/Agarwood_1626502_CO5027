@@ -29,5 +29,10 @@ namespace Agarwood.Admins
                 l1.Text = "~/Admin/ProductImages" + fle.FileName;
             }
         }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
