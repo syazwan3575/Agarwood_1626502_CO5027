@@ -9,16 +9,19 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    <form id="form1" runat="server">
-        <asp:FormView ID="FormView2" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2" DefaultMode="Insert">
+    <form id="form1" runat="server" enableviewstate="True">
+        <asp:FormView ID="FormView3" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource2" DefaultMode="Insert">
             <EditItemTemplate>
                 ProductImage:
-                <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
+                <asp:FileUpload ID="FileUpload4" runat="server" />
+                <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Save</asp:LinkButton>
+                <asp:Label ID="Label4" runat="server" Text='<%# Bind("ProductImage") %>'></asp:Label>
                 <br />
-                ProductName:&nbsp;<asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
+                ProductName:
+                <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
                 <br />
                 ProductID:
-                <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>'></asp:Label>
+                <asp:Label ID="ProductIDLabel1" runat="server" Text='<%# Eval("ProductID") %>' />
                 <br />
                 ProductDetails:
                 <asp:TextBox ID="ProductDetailsTextBox" runat="server" Text='<%# Bind("ProductDetails") %>' />
@@ -29,17 +32,17 @@
                 ProductPrice:
                 <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
                 <br />
-                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update"></asp:LinkButton>
-&nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+                <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
+                &nbsp;<asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </EditItemTemplate>
             <InsertItemTemplate>
                 ProductImage:
+                <asp:FileUpload ID="FileUpload3" runat="server" />
                 <br />
-                <asp:FileUpload ID="FileUpload1" runat="server" />
                 <br />
-                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click2">Save</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Save</asp:LinkButton>
+                <asp:Label ID="Label3" runat="server" Text='<%# Bind("ProductImage") %>'></asp:Label>
                 <br />
-                <asp:Label ID="Label1" runat="server" Text='<%# Bind("ProductImage") %>'></asp:Label>
                 <br />
                 ProductName:
                 <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />
@@ -57,11 +60,11 @@
                 <asp:TextBox ID="ProductPriceTextBox" runat="server" Text='<%# Bind("ProductPrice") %>' />
                 <br />
                 <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-                &nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
+&nbsp;<asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
             </InsertItemTemplate>
             <ItemTemplate>
-                ProductImage:
-                <asp:Label ID="ProductImageLabel" runat="server" Text='<%# Bind("ProductImage") %>' />
+                ProductImage:<asp:Image ID="Image3" runat="server" Height="136px" ImageUrl='<%# Eval("ProductImage") %>' Width="125px" />
+&nbsp;<asp:Label ID="ProductImageLabel" runat="server" Text='<%# Bind("ProductImage") %>' />
                 <br />
                 ProductName:
                 <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Bind("ProductName") %>' />
@@ -114,6 +117,7 @@
                 <asp:Parameter Name="original_ProductPrice" Type="String" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Edit/Delete" />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource2" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField DataField="ProductName" HeaderText="ProductName" SortExpression="ProductName" />
@@ -126,7 +130,6 @@
                         <asp:Image ID="Image2" runat="server" Height="166px" ImageUrl='<%# Eval("ProductImage") %>' Width="162px" />
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:CommandField HeaderText="Edit" ShowDeleteButton="True" ShowEditButton="True" ShowHeader="True" />
             </Columns>
             <EmptyDataTemplate>
                 <asp:Image ID="Image1" runat="server" Height="131px" Width="179px" />

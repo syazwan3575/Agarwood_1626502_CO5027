@@ -25,7 +25,7 @@ namespace Agarwood
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/ViewProduct.aspx");
+            Response.Redirect("~/Products.aspx");
         }
     }
 }

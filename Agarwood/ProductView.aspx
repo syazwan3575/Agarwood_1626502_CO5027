@@ -8,7 +8,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
         <div style="text-align: center">
-        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" Height="345px" style="margin-right: 0px" Width="750px">
+        <asp:FormView ID="FormView1" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" Height="345px" style="margin-right: 0px" Width="850px">
             <EditItemTemplate>
                 ProductImage:
                 <asp:TextBox ID="ProductImageTextBox" runat="server" Text='<%# Bind("ProductImage") %>' />
@@ -95,20 +95,6 @@
                         </td>
                     </tr>
                 </table>
-                <br />ProductName:
-                <asp:Label ID="ProductNameLabel" runat="server" Text='<%# Bind("ProductName") %>' />
-                <br />
-                ProductID:
-                <asp:Label ID="ProductIDLabel" runat="server" Text='<%# Eval("ProductID") %>' />
-                <br />
-                ProductDetails:
-                <asp:Label ID="ProductDetailsLabel" runat="server" Text='<%# Bind("ProductDetails") %>' />
-                <br />
-                ProductQuantity:
-                <asp:Label ID="ProductQuantityLabel" runat="server" Text='<%# Bind("ProductQuantity") %>' />
-                <br />
-                ProductPrice:
-                <asp:Label ID="ProductPriceLabel" runat="server" Text='<%# Bind("ProductPrice") %>' />
                 <br />
 
             </ItemTemplate>

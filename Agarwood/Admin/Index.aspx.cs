@@ -30,5 +30,10 @@ namespace Agarwood.Admins
         {
             Response.Redirect("~/Admin/UploadImage.aspx");
         }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Edit.aspx/");
+        }
     }
 }

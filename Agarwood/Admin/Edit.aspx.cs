@@ -19,20 +19,44 @@ namespace Agarwood.Admins
            
         }
 
-        protected void LinkButton1_Click2(object sender, EventArgs e)
-        {
-            FileUpload fle = (FileUpload)FormView2.FindControl("FileUpload1") as FileUpload;
-            if (fle.HasFile)
-            {
-                fle.SaveAs(Server.MapPath("~/Admin/ProductImages" + fle.FileName));
-                Label l1 = (Label)FormView2.FindControl("Label1") as Label;
-                l1.Text = "~/Admin/ProductImages" + fle.FileName;
-            }
-        }
+      
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
+
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Admin/Add.aspx/");
+        }
+
+        protected void FormView2_PageIndexChanging(object sender, FormViewPageEventArgs e)
+        {
+
+        }
+
+        protected void LinkButton3_Click(object sender, EventArgs e)
+        {
+            FileUpload fle = (FileUpload)FormView3.FindControl("FileUpload3") as FileUpload;
+            if (fle.HasFile)
+            {
+                fle.SaveAs(Server.MapPath("~/Admin/ProductImages" + fle.FileName));
+                Label l1 = (Label)FormView3.FindControl("Label3") as Label;
+                l1.Text = "~/Admin/ProductImages" + fle.FileName;
+            }
+        }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            FileUpload fle = (FileUpload)FormView3.FindControl("FileUpload4") as FileUpload;
+            if (fle.HasFile)
+            {
+                fle.SaveAs(Server.MapPath("~/Admin/ProductImages" + fle.FileName));
+                Label l1 = (Label)FormView3.FindControl("Label4") as Label;
+                l1.Text = "~/Admin/ProductImages" + fle.FileName;
+            }
+        }
     }
-}
+    }

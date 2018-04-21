@@ -10,7 +10,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="left: 0px; bottom: -6px" Text="Add" />
-        <asp:Button ID="Button3" runat="server" Text="Edit" />
+        <asp:Button ID="Button3" runat="server" Text="Edit" OnClick="Button3_Click" />
         <asp:Button ID="Button4" runat="server" OnClick="Button4_Click" Text="Upload Image" />
         <br />
         <br />
