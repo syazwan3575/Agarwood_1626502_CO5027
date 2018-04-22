@@ -31,8 +31,19 @@ namespace Agarwood
 
         }
 
-        protected void Button2_ItemCommand(object source, DataListCommandEventArgs e)
+        
+
+        protected void Productlist_SelectedIndexChanged(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Productlist_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+
+            DropDownList dlist = (DropDownList)(e.Item.FindControl("DropDownList1"));
+            Response.Redirect("AddtoCart.aspx?id=" + e.CommandArgument.ToString() + "&quantity=" + dlist.SelectedItem.ToString());
+
             if (e.CommandName == "addtocart")
             {
                 Response.Redirect("ShoppingCart.aspx?id=" + e.CommandArgument.ToString());

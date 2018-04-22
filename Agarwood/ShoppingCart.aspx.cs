@@ -17,14 +17,15 @@ namespace Agarwood.Admins
             {
                 DataTable dt = new DataTable();
                 DataRow dr;
+                dt.Columns.Add("sno");
                 dt.Columns.Add("ProductId");
                 dt.Columns.Add("ProductName");
-                dt.Columns.Add("ProductImage");
                 dt.Columns.Add("ProductPrice");
-                dt.Columns.Add("Cost");
-                dt.Columns.Add("Totalcost");
+                dt.Columns.Add("ProductImage");
+                dt.Columns.Add("cost");
+                dt.Columns.Add("totalcost");
 
-                if (Request.QueryString["Id"] != null)
+                if (Request.QueryString["id"] != null)
                 {
                     if (Session["Buyitems"] == null)
                     {
@@ -32,19 +33,19 @@ namespace Agarwood.Admins
                         dr = dt.NewRow();
                         String mycon = "Data Source=HP-PC\\SQLEXPRESS;Initial Catalog=haritiShopping;Integrated Security=True";
                         SqlConnection scon = new SqlConnection(mycon);
-                        String myquery = "select * from productdetail where productid=" + Request.QueryString["Id"];
+                        String myquery = "select * from productdetail where productid=" + Request.QueryString["id"];
                         SqlCommand cmd = new SqlCommand();
                         cmd.CommandText = myquery;
                         cmd.Connection = scon;
                         SqlDataAdapter da = new SqlDataAdapter();
                         da.SelectCommand = cmd;
                         DataSet ds = new DataSet();
-                        da.Fill(ds);
-                        dr["ProductId"] = 1;
+                        da.Fill(dt);
+                        dr["sno"] = 1;
+                        dr["ProductId"] = ds.Tables[0].Rows[0]["ProductId"].ToString();
                         dr["ProductName"] = ds.Tables[0].Rows[0]["ProductName"].ToString();
-                        dr["ProductPrice"] = ds.Tables[0].Rows[0]["ProductPrice"].ToString();
                         dr["ProductImage"] = ds.Tables[0].Rows[0]["ProductImage"].ToString();
-
+                        dr["ProductPrice"] = ds.Tables[0].Rows[0]["ProductPrice"].ToString();
                         dt.Rows.Add(dr);
                         GridView1.DataSource = dt;
                         GridView1.DataBind();
@@ -60,7 +61,7 @@ namespace Agarwood.Admins
                         dr = dt.NewRow();
                         String mycon = "Data Source=HP-PC\\SQLEXPRESS;Initial Catalog=haritiShopping;Integrated Security=True";
                         SqlConnection scon = new SqlConnection(mycon);
-                        String myquery = "select * from productdetail where productId=" + Request.QueryString["id"];
+                        String myquery = "select * from productdetail where productid=" + Request.QueryString["id"];
                         SqlCommand cmd = new SqlCommand();
                         cmd.CommandText = myquery;
                         cmd.Connection = scon;
@@ -68,10 +69,11 @@ namespace Agarwood.Admins
                         da.SelectCommand = cmd;
                         DataSet ds = new DataSet();
                         da.Fill(ds);
-                        dr["ProductId"] = sr + 1;
-                        dr["ProductName"] = ds.Tables[0].Rows[0]["productname"].ToString();
-                        dr["ProductPrice"] = ds.Tables[0].Rows[0]["productimage"].ToString();
-                        dr["ProductImage"] = ds.Tables[0].Rows[0]["price"].ToString();
+                        dr["sno"] = sr + 1;
+                        dr["ProductId"] = ds.Tables[0].Rows[0]["ProductId"].ToString();
+                        dr["ProductName"] = ds.Tables[0].Rows[0]["ProductName"].ToString();
+                        dr["ProductImage"] = ds.Tables[0].Rows[0]["ProductImage"].ToString();
+                        dr["ProductPrice"] = ds.Tables[0].Rows[0]["ProductPrice"].ToString();
                         dt.Rows.Add(dr);
                         GridView1.DataSource = dt;
                         GridView1.DataBind();

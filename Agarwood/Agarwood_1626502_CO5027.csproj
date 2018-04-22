@@ -163,10 +163,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AddtoCart.aspx" />
     <Content Include="Admin\Add.aspx" />
     <Content Include="Admin\Edit.aspx" />
     <Content Include="Admin\Editing.aspx" />
     <Content Include="Admin\Index.aspx" />
+    <Content Include="images\addtocart.jpg" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Admin\UploadImage.aspx" />
     <Content Include="images\arabian_oud_logo.jpg" />
@@ -260,6 +262,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddtoCart.aspx.cs">
+      <DependentUpon>AddtoCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddtoCart.aspx.designer.cs">
+      <DependentUpon>AddtoCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
