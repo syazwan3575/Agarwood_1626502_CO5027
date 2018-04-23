@@ -169,6 +169,10 @@
     <Content Include="Admin\Editing.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="images\addtocart.jpg" />
+    <Content Include="images\contact.jpg" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\product.jpg" />
+    <Content Include="images\register.jpg" />
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Admin\UploadImage.aspx" />
     <Content Include="images\arabian_oud_logo.jpg" />

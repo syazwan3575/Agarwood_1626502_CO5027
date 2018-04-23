@@ -7,6 +7,8 @@
         <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
+    <h2>
+        Please Log on with your Email or username.</h2>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">

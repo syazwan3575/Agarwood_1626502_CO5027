@@ -57,24 +57,20 @@
 
  <div class="row">
   <div class="column">
-      <a href="BakhoorOudRose.aspx" runat="server">
-    <img src="oud/bakhoor oud rose.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>bakhoor oud rose</p> <p>$20</p>
+      <a href="Contact.aspx" runat="server">
+    <img src="images/contact.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Feel free to contact us.</p> 
   </div>
   
   <div class="column">
-      <a href="BakhoorSultan.aspx" runat="server">
-    <img src="oud/Bakhoor Sultan Al Oud.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhoor Sultan Al Oud</p> <p>$20</p>
+      <a href="Products.aspx" runat="server">
+    <img src="images/product.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Find out more!</p>
   </div>
     
   <div class="column">
-      <a href="AlArab.aspx" runat="server">
-    <img src="oud/BAKHOOR AL ARAB.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>BAKHOOR AL ARAB</p> <p>$20</p>
+      <a href="Register.aspx" runat="server">
+    <img src="images/register.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Be our member.</p> 
   </div>
       
-     <div class="column">
-          <a href="AlMajalis.aspx" runat="server">
-    <img src="oud/BAKHOOR AL MAJALIS.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>BAKHOOR AL MAJALIS </p> <p>$20</p>
-  </div>
      </div>
         </div>
 </asp:Content>
