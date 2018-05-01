@@ -29,11 +29,7 @@
 
 <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+
 <script>
     var slideIndex = 0;
     showSlides();
@@ -52,26 +48,34 @@
 </script>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="main-content">
+    <form id="form1" runat="server">
+        <div class="main-content">
     <h2 class="homepage">Incense Bakhoor/Oud</h2>
 
  <div class="row">
-  <div class="column">
-      <a href="Contact.aspx" runat="server">
-    <img src="images/contact.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Feel free to contact us.</p> 
+     <br />
+    
+<div class="column">
+      <a href="ProductView.aspx?Id=6" runat="server">
+    <img src="Product/Sultan.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Adeni</p> <p>$35</p> 
   </div>
   
-  <div class="column">
-      <a href="Products.aspx" runat="server">
-    <img src="images/product.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Find out more!</p>
+      <div class="column">
+      <a href="ProductView.aspx?Id=8" runat="server">
+    <img src="Product/ADENI.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Adeni</p> <p>$35</p> 
+  </div>                       
+       
+      <div class="column">
+      <a href="ProductView.aspx?Id=1" runat="server">
+    <img src="Product/ARAB.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Al Arab</p> <p>$35</p> 
   </div>
-    
-  <div class="column">
-      <a href="Register.aspx" runat="server">
-    <img src="images/register.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Be our member.</p> 
+           <div class="column">
+      <a href="ProductView.aspx?Id=3" runat="server">
+    <img src="Product/Farhah.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Farhah</p> <p>$35</p> 
   </div>
-      
-     </div>
+            </div>
         </div>
+       
+    </form>
 </asp:Content>
 

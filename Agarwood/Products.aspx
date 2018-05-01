@@ -10,8 +10,18 @@
     <h2>View Product</h2>
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="mainForm">
     <form id="form1" runat="server">
-        <asp:DataList ID="Productlist" runat="server" DataKeyField="ProductID" DataSourceID="SqlDataSource1" RepeatColumns="3" BorderColor="Red" OnSelectedIndexChanged="Productlist_SelectedIndexChanged" OnItemCommand="Productlist_ItemCommand" >
+        <div style="text-align: right">
+        You have product in your cart:
+        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+        &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AddtoCart.aspx">Show Cart</asp:HyperLink>
+        </div>
+        <asp:DataList ID="Productlist" runat="server" DataKeyField="ProductID" DataSourceID="SqlDataSource1" RepeatColumns="3" BorderColor="#DEDFDE" OnSelectedIndexChanged="Productlist_SelectedIndexChanged" OnItemCommand="Productlist_ItemCommand" BackColor="White" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" >
+            <AlternatingItemStyle BackColor="White" />
+            <FooterStyle BackColor="#CCCC99" />
+            <HeaderStyle BackColor="#6B696B" Font-Bold="True" ForeColor="White" />
+            <ItemStyle BackColor="#F7F7DE" HorizontalAlign="Center" />
             <ItemTemplate>
                 <div style="text-align: center">
                     <a href="<%#Eval("ProductId","ProductView.aspx?Id={0}") %>">
@@ -21,7 +31,6 @@
                     &nbsp;<br />Price:
                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("ProductPrice") %>'></asp:Label>
                     <br />
-                    <asp:Button ID="Button1" runat="server" Text="Details" />
                     <br />
                     Quantity:
                     <asp:DropDownList ID="DropDownList1" runat="server">
@@ -36,18 +45,18 @@
                         <asp:ListItem>9</asp:ListItem>
                     </asp:DropDownList>
                     <br />
-                    <asp:ImageButton ID="ImageButton1" runat="server" CommandName="addtocart" Height="61px" ImageUrl="~/images/addtocart.jpg" Width="191px" CommandArgument='<%# Eval("ProductId") %>'/>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="ADD TO CART" />
+                    <br />
                 </div>
             </ItemTemplate>
+            <SelectedItemStyle BackColor="#CE5D5A" Font-Bold="True" ForeColor="White" HorizontalAlign="Center" />
         </asp:DataList>
-        You have product in your cart:
-        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
-        <asp:HyperLink ID="HyperLink1" runat="server">Show Cart</asp:HyperLink>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:db_1626502_co5027_asgConnectionString3 %>" SelectCommand="SELECT * FROM [view product]"></asp:SqlDataSource>
         <br />
 </form>
+       </div> 
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

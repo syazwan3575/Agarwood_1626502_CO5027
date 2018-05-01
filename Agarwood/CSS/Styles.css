@@ -22,8 +22,19 @@
     height: 250px;
 }
 
-h2{
-    text-align:center;
+#FormView1 {
+    height: 345px;
+    width: 850px;
+}
+.mainForm {
+    margin-left: 150px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
 }
 
 .homepage h2 {
@@ -256,24 +267,7 @@ img.hover-shadow {
 }
 
 /*======product table====*/
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-   margin-right: -150px;
-    border: 3px solid #ddd;
-}
 
-th, td {
-    text-align: left;
-    padding: 16px;
-    width: 200px;
-    height: 50px;
-    border: 3px solid #ddd;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
 /*======Login====*/
 .container {
     margin: 80px auto;
@@ -381,6 +375,7 @@ input[type=submit] {
 
 
 /*======footer====*/
+
 footer {
     overflow: hidden;
     clear: both;
@@ -388,7 +383,7 @@ footer {
     padding: 12px 20px 13px 20px;
     height: auto;
     color: white;
-    background-color:brown;
+    background-color: brown;
 }
 
 footer a {

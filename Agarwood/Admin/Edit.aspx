@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
         <a class:"headlogo">
-        <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
+        <img src="" class="main-logo" alt="go-to-homepage" /></a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Heading2" runat="server">
 </asp:Content>
@@ -41,8 +41,10 @@
                 <br />
                 <br />
                 <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Save</asp:LinkButton>
+
                 <asp:Label ID="Label3" runat="server" Text='<%# Bind("ProductImage") %>'></asp:Label>
                 <br />
+
                 <br />
                 ProductName:
                 <asp:TextBox ID="ProductNameTextBox" runat="server" Text='<%# Bind("ProductName") %>' />

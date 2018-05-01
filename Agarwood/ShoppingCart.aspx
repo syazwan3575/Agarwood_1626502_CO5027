@@ -9,34 +9,58 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Products.aspx">Continue Shopping</asp:HyperLink>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" GridLines="None" Height="308px">
-            <Columns>
-                <asp:BoundField DataField="sno" HeaderText="S.No">
-                <ItemStyle HorizontalAlign="Center" />
-                </asp:BoundField>
-                <asp:BoundField DataField="ProductId" HeaderText="Product ID">
-                <ItemStyle HorizontalAlign="Center" />
-                </asp:BoundField>
-                <asp:BoundField DataField="ProductName" HeaderText="Product Name">
-                <ItemStyle HorizontalAlign="Center" />
-                </asp:BoundField>
-                <asp:BoundField DataField="ProductPrice" HeaderText="Product Price">
-                <ItemStyle HorizontalAlign="Center" />
-                </asp:BoundField>
-                <asp:ImageField DataImageUrlField="ProductImage" HeaderText="Product Image">
-                    <ItemStyle HorizontalAlign="Center" />
-                </asp:ImageField>
-            </Columns>
-            <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
-            <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" ForeColor="#E7E7FF" />
-            <PagerStyle BackColor="#C6C3C6" ForeColor="Black" HorizontalAlign="Right" />
-            <RowStyle BackColor="#DEDFDE" ForeColor="Black" />
-            <SelectedRowStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
-            <SortedAscendingCellStyle BackColor="#F1F1F1" />
-            <SortedAscendingHeaderStyle BackColor="#594B9C" />
-            <SortedDescendingCellStyle BackColor="#CAC9C9" />
-            <SortedDescendingHeaderStyle BackColor="#33276A" />
-        </asp:GridView>
+        <asp:Panel ID="Panel1" runat="server">
+        
+        
+        <div>
+  <table align="center" cellpadding="10">
+       <tr>
+         <td>
+             <asp:Button ID="Button1" runat="server" Text="&lt;&lt;" Width="60px" 
+                 onclick="Button1_Click" Visible="False" />
+         </td>
+         <td>
+             <asp:Button ID="Button2" runat="server" Text="&gt;&gt;" Width="60px" 
+                 onclick="Button2_Click" Visible="False" />
+         </td>
+          <td>
+              <asp:Label ID="Label4" runat="server"></asp:Label>
+          </td>
+       </tr>
+     </table>
+
+     <center style="margin-top:60px">
+         <asp:Label ID="Label3" runat="server" Font-Names="Algerian" Font-Size="Large" Visible="False">No product in the Cart</asp:Label>
+     </center>
+
+
+     <table align="center" style="margin-top:50px;font-size:18px" cellpadding="10" runat="server" id="pd"> 
+      <tr>
+       <td>Product name</td>
+       <td style="width: 83px">
+           <asp:Label ID="Label2" runat="server" Font-Size="Large" ForeColor="Blue"></asp:Label>
+       </td>
+      </tr>
+
+      <tr>
+       <td>Product photo</td>
+       <td style="width: 83px">
+           <asp:Image ID="mainContent_Formview2_Image2" runat="server"  />
+       </td>
+      </tr>
+
+      <tr>
+       <td>Product price</td>
+       <td style="width: 83px">
+           <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Size="Large" 
+               ForeColor="Blue"></asp:Label>
+       </td>
+      </tr>
+      </table>
+
+
+    </div>
+            </asp:Panel>
     </form>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
