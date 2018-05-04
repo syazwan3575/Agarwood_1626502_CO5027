@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Sitemaster.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Agarwood.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Title" runat="server">
-        The Scent of Oud
-</asp:Content>
+        The Scent of Oud</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Heading1" runat="server">
         <a class:"headlogo">
         <img src="images/title.png" class="main-logo" alt="go-to-homepage" /></a>
@@ -15,7 +14,10 @@
         <asp:TextBox ID="txtLoginEmail" runat="server" CausesValidation="True"></asp:TextBox>
         <br />
         <asp:Label ID="Label2" runat="server" Text="Password"></asp:Label>
-        <asp:TextBox ID="txtLoginPassword" runat="server"></asp:TextBox>
+        <asp:TextBox ID="txtLoginPassword" runat="server" TextMode="Password" ></asp:TextBox>
+               
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Create Account</asp:HyperLink>
+               
         <br />
         <br />
         <asp:Button ID="btnLogin" runat="server" OnClick="btnLogin_Click" Text="Login" />

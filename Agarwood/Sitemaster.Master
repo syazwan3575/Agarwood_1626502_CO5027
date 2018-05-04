@@ -41,7 +41,7 @@
                 <a href="~/Contact.aspx" runat="server">Contact</a>
                 <a href="~/Login.aspx" runat="server">Login</a>
                 <a href="~/Register.aspx" runat="server">Register</a>
-                <a href="~/ShoppingCart.aspx" runat="server">Cart</a>
+                <a href="~/User/ShoppingCart.aspx" runat="server">Cart</a>
           
         </div>  
     
@@ -64,22 +64,12 @@
     </asp:ContentPlaceHolder>
         <!--Beginning of the footer-->
         <footer>
-
-            <p>
-                <a href="~/Default.aspx" title="Home" runat="server">Home</a> | 
-                <a href="~/Products.aspx" title="Products" runat="server">Products</a> | 
-                <a href="~/Contact.aspx" title="Contact Us" runat="server">Contact Us</a> | 
-                <a href="~/Login.aspx" title="Account" runat="server">Account</a> | 
-                <a href="~/Admin/Index.aspx" title="Admin" runat="server">Admin</a>
-
-            </p>
-            <p  class="info-footer" >Copyright 2018 &copy; The Scent Of Oud. | All of the products and photo are belong from the other website.</p>
+            <p  class="info-footer" >Copyright 2018 &copy; The Scent Of Oud. | All of the products and images are belong from Arabian oud website.</p>
             <p>Created by: 1626502 | MD Nur Syazwan</p>
             <a href="http://validator.w3.org/check?uri=referer" title="Validate HTML">Validate HTML</a> | 
-			<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate CSS">Validate CSS</a> | 
-            <a href="http://achecker.ca/checker/?uri=referer" title="Validate WCAG">Check WCAG</a>
- 
-</footer>
+			<a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            <a href="~/Admin/Index.aspx" title="Admin" runat="server">Admin</a>
+        </footer>
         <!--Ending of the footer-->
       
 </body>

@@ -12,24 +12,11 @@
                 <asp:QueryStringParameter Name="ProductID" QueryStringField="Id" Type="Int32" />
             </SelectParameters>
         </asp:SqlDataSource>
-        <asp:DropDownList ID="DropDownList1" runat="server">
-            <asp:ListItem Selected="True">1</asp:ListItem>
-            <asp:ListItem>2</asp:ListItem>
-            <asp:ListItem>3</asp:ListItem>
-            <asp:ListItem>4</asp:ListItem>
-            <asp:ListItem>5</asp:ListItem>
-            <asp:ListItem>6</asp:ListItem>
-            <asp:ListItem>7</asp:ListItem>
-            <asp:ListItem>8</asp:ListItem>
-            <asp:ListItem>9</asp:ListItem>
-        </asp:DropDownList>
         <br />
-        <asp:Button ID="btnPurchase" runat="server" Text="Buy Now" OnClick="btnPurchase_Click" />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View More" />
+
 
 
         <!--<asp:Button ID="btnAdd" runat="server"  Text="Add to Cart" />-->
-        <asp:Label ID="lblResult" runat="server" Text="lblResult"></asp:Label>
 
 
         <asp:FormView ID="FormView2" runat="server" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" Height="283px" Width="628px">
@@ -120,21 +107,73 @@
                         </td>
                         <td>
                             <asp:Label ID="Label14" runat="server" Text='<%# Eval("ProductDetails") %>'></asp:Label>
-                            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="ADD TO CART" />
                         </td>
                     </tr>
                 </table>
             </ItemTemplate>
         </asp:FormView>
+        <asp:Button ID="btnPurchase" runat="server" Text="Buy Now" OnClick="btnPurchase_Click" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="View More" />
+
+        <asp:DropDownList ID="DropDownList1" runat="server">
+            <asp:ListItem Selected="True">1</asp:ListItem>
+            <asp:ListItem>2</asp:ListItem>
+            <asp:ListItem>3</asp:ListItem>
+            <asp:ListItem>4</asp:ListItem>
+            <asp:ListItem>5</asp:ListItem>
+            <asp:ListItem>6</asp:ListItem>
+            <asp:ListItem>7</asp:ListItem>
+            <asp:ListItem>8</asp:ListItem>
+            <asp:ListItem>9</asp:ListItem>
+        </asp:DropDownList>
+
+        <br />
+
+        <h3>If you want to add this product on the shopping cart, please select your product name on the dropdown list and click the button cart below.</h3>
+    <table align="left" style="margin-top :40px; font-size :18px;" cellpadding="10">
+ <tr>
+ <td>
+ Select Product
+ </td>
+ <td>  
+     
+     &nbsp;</td>
+ </tr>
+
+ <tr>
+ <td >
+     
+     <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+         <asp:ListItem>SELECT</asp:ListItem>
+         <asp:ListItem>BAKHOOR AL ARAB</asp:ListItem>
+         <asp:ListItem>BAKHOOR AL MAJALIS</asp:ListItem>
+         <asp:ListItem>Bakhoor Farhah</asp:ListItem>
+         <asp:ListItem>BAKHOOR MAJOON AL REHAB</asp:ListItem>
+         <asp:ListItem>bakhoor oud rose</asp:ListItem>
+         <asp:ListItem>Bakhoor Sultan Al Oud</asp:ListItem>
+         <asp:ListItem>BAKHOUR ADENI</asp:ListItem>
+         <asp:ListItem>ROYAL BAKHOUR</asp:ListItem>
+     </asp:DropDownList>
+     
+ </td> 
+ </tr>
+ <tr>
+ <td>
+     <asp:Image ID="Item" runat="server" Width="150px" />
+     <asp:Label ID="Name" runat="server"  Font-Bold ="True"></asp:Label>
+ </td>
+  </tr>
+ <tr>
+  <td colspan="2" align="center">
+      <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="ADD TO CART" />
+ </td>
+ </tr>
+ </table>
+    
+        </form>
 
 
-    </form>
-   <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="KHCMB3FVV73VE">
-&nbsp;<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" __designer:mapid="219"></form>-->
-
+        
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
 </asp:Content>

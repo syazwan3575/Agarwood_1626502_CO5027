@@ -15,7 +15,7 @@
         <div style="text-align: right">
         You have product in your cart:
         <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
-        &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/AddtoCart.aspx">Show Cart</asp:HyperLink>
+        &nbsp;<asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/User/ShoppingCart.aspx">Show Cart</asp:HyperLink>
         </div>
         <asp:DataList ID="Productlist" runat="server" DataKeyField="ProductID" DataSourceID="SqlDataSource1" RepeatColumns="3" BorderColor="#DEDFDE" OnSelectedIndexChanged="Productlist_SelectedIndexChanged" OnItemCommand="Productlist_ItemCommand" BackColor="White" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black" GridLines="Vertical" >
             <AlternatingItemStyle BackColor="White" />
@@ -32,20 +32,7 @@
                     <asp:Label ID="Label2" runat="server" Text='<%# Eval("ProductPrice") %>'></asp:Label>
                     <br />
                     <br />
-                    Quantity:
-                    <asp:DropDownList ID="DropDownList1" runat="server">
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                    </asp:DropDownList>
                     <br />
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="ADD TO CART" />
                     <br />
                 </div>
             </ItemTemplate>

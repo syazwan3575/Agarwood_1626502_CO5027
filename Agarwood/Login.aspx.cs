@@ -51,7 +51,11 @@ namespace Agarwood
                 {
                     Response.Redirect("~/Admin/Index.aspx");
                 }
+                else if (userRoles.Equals("RegisteredUser"))
+                {
+                    Response.Redirect("~/User/ShoppingCart.aspx");
+                }
             }
         }
+        }
     }
-}

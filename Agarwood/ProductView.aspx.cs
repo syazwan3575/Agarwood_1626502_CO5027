@@ -9,11 +9,9 @@ using Microsoft.AspNet.Identity;
 
 namespace Agarwood
 {
+    //code adapted from: http://www.coderbaba.in/2017/08/shopping-website-project-in-aspnet-with.html#comments
     public partial class Products : System.Web.UI.Page
     {
-        public string MainContent_Formview2_Image2 { get; private set; }
-        public string MainContent_Formview_Label10 { get; private set; }
-
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -97,7 +95,6 @@ namespace Agarwood
                     Response.Redirect(link.href);
                 }
             }
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -105,18 +102,25 @@ namespace Agarwood
             Response.Redirect("~/Products.aspx");
         }
 
-
-
-        protected void Button3_Click(object sender, EventArgs e)
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ItemAdded(MainContent_Formview2_Image2))
+            string[] price = { "", "25", "25", "25", "25", "25", "25", "35", "25" };
+            Item.ImageUrl = "pics/" + DropDownList2.Text + ".jpg";
+            int i = DropDownList2.SelectedIndex;
+            Name.Text = "BND" + price[i];
+            Button2.Visible = true;
+        }
+
+
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            if (ItemAdded(DropDownList2.Text))
             {
                 Response.Write("<script>alert('selected item is already added in cart')</script>");
                 return;
             }
-
             Session["ctr"] = (int)Session["ctr"] + 1;
-            Product proj = new Product(DropDownList1.Text, MainContent_Formview2_Image2, MainContent_Formview_Label10);
+            Product proj = new Product(DropDownList2.Text, Item.ImageUrl, Name.Text);
             Session["p" + Session["ctr"]] = proj;
             Server.Transfer("Add.aspx");
         }
@@ -128,7 +132,7 @@ namespace Agarwood
             {
                 Product p = (Product)Session["p" + c];
 
-                if (name == p.ProductName)
+                if (name == p.name)
                 {
                     found = true;
                     break;

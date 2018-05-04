@@ -17,7 +17,7 @@ namespace Agarwood
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
-                LoginPath = new PathString("/Login.aspx")
+                LoginPath = new PathString("/Login.aspx")              
             });
         }
     }

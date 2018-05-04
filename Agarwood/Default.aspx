@@ -57,21 +57,21 @@
     
 <div class="column">
       <a href="ProductView.aspx?Id=6" runat="server">
-    <img src="Product/Sultan.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Adeni</p> <p>$35</p> 
+    <img src="Product/Sultan.jpg" style="width:100%" alt="Sultan" class="hover-shadow cursor"></a> <p>Bakhour Adeni</p> <p>$35</p> 
   </div>
   
       <div class="column">
       <a href="ProductView.aspx?Id=8" runat="server">
-    <img src="Product/ADENI.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Adeni</p> <p>$35</p> 
+    <img src="Product/ADENI.jpg" style="width:100%" alt="Adeni" class="hover-shadow cursor"></a> <p>Bakhour Adeni</p> <p>$35</p> 
   </div>                       
        
       <div class="column">
       <a href="ProductView.aspx?Id=1" runat="server">
-    <img src="Product/ARAB.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Al Arab</p> <p>$35</p> 
+    <img src="Product/ARAB.jpg" style="width:100%" alt="Arab" class="hover-shadow cursor"></a> <p>Bakhour Al Arab</p> <p>$35</p> 
   </div>
            <div class="column">
       <a href="ProductView.aspx?Id=3" runat="server">
-    <img src="Product/Farhah.jpg" style="width:100%"  class="hover-shadow cursor"></a> <p>Bakhour Farhah</p> <p>$35</p> 
+    <img src="Product/Farhah.jpg" style="width:100%" alt="Farhah" class="hover-shadow cursor"></a> <p>Bakhour Farhah</p> <p>$35</p> 
   </div>
             </div>
         </div>

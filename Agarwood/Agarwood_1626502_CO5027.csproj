@@ -164,10 +164,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Add.aspx" />
-    <Content Include="AddtoCart.aspx" />
     <Content Include="Admin\Add.aspx" />
     <Content Include="Admin\Edit.aspx" />
-    <Content Include="Admin\Editing.aspx" />
     <Content Include="Admin\Index.aspx" />
     <Content Include="CompletePurchase.aspx" />
     <Content Include="images\addtocart.jpg" />
@@ -176,8 +174,23 @@
     <Content Include="images\logoOud.jpg" />
     <Content Include="images\product.jpg" />
     <Content Include="images\register.jpg" />
-    <Content Include="ShoppingCart.aspx" />
-    <Content Include="Admin\UploadImage.aspx" />
+    <Content Include="pics\BAKHOOR AL ARAB.jpg" />
+    <Content Include="pics\BAKHOOR AL MAJALIS.jpg" />
+    <Content Include="pics\Bakhoor Farhah.jpg" />
+    <Content Include="pics\BAKHOOR MAJOON AL REHAB.jpg" />
+    <Content Include="pics\bakhoor oud rose.jpg" />
+    <Content Include="pics\Bakhoor Sultan Al Oud.jpg" />
+    <Content Include="pics\BAKHOUR ADENI.jpg" />
+    <Content Include="pics\ROYAL BAKHOUR.jpg" />
+    <Content Include="User\pics\BAKHOOR AL ARAB.jpg" />
+    <Content Include="User\pics\BAKHOOR AL MAJALIS.jpg" />
+    <Content Include="User\pics\Bakhoor Farhah.jpg" />
+    <Content Include="User\pics\BAKHOOR MAJOON AL REHAB.jpg" />
+    <Content Include="User\pics\bakhoor oud rose.jpg" />
+    <Content Include="User\pics\Bakhoor Sultan Al Oud.jpg" />
+    <Content Include="User\pics\BAKHOUR ADENI.jpg" />
+    <Content Include="User\pics\ROYAL BAKHOUR.jpg" />
+    <Content Include="User\ShoppingCart.aspx" />
     <Content Include="images\logo.jpg" />
     <Content Include="images\bakhoor al emarat.jpg" />
     <Content Include="images\bakhoor anfas.jpg" />
@@ -220,7 +233,6 @@
     <Content Include="oud\Bakhoor Sultan Al Oud.jpg" />
     <Content Include="oud\BAKHOUR ADENI.jpg" />
     <Content Include="oud\ROYAL BAKHOUR.jpg" />
-    <Content Include="Product2.aspx" />
     <Content Include="ProductView.aspx" />
     <Content Include="Product\ARAB.jpg" />
     <Content Include="Product\MAJALIS.jpg" />
@@ -276,13 +288,6 @@
     <Compile Include="Add.aspx.designer.cs">
       <DependentUpon>Add.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AddtoCart.aspx.cs">
-      <DependentUpon>AddtoCart.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddtoCart.aspx.designer.cs">
-      <DependentUpon>AddtoCart.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Admin\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -296,13 +301,6 @@
     </Compile>
     <Compile Include="Admin\Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Editing.aspx.cs">
-      <DependentUpon>Editing.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\Editing.aspx.designer.cs">
-      <DependentUpon>Editing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -319,19 +317,12 @@
       <DependentUpon>CompletePurchase.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
-    <Compile Include="ShoppingCart.aspx.cs">
+    <Compile Include="User\ShoppingCart.aspx.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ShoppingCart.aspx.designer.cs">
+    <Compile Include="User\ShoppingCart.aspx.designer.cs">
       <DependentUpon>ShoppingCart.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\UploadImage.aspx.cs">
-      <DependentUpon>UploadImage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Admin\UploadImage.aspx.designer.cs">
-      <DependentUpon>UploadImage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -358,13 +349,6 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Product2.aspx.cs">
-      <DependentUpon>Product2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Product2.aspx.designer.cs">
-      <DependentUpon>Product2.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductView.aspx.cs">
       <DependentUpon>ProductView.aspx</DependentUpon>
@@ -419,6 +403,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Sitemaster.Master" />
+    <Content Include="User\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -19,7 +19,6 @@
                 <asp:BoundField DataField="ProductDetails" HeaderText="ProductDetails" SortExpression="ProductDetails" />
                 <asp:BoundField DataField="ProductQuantity" HeaderText="ProductQuantity" SortExpression="ProductQuantity" />
                 <asp:BoundField DataField="ProductPrice" HeaderText="ProductPrice" SortExpression="ProductPrice" />
-                <asp:HyperLinkField DataNavigateUrlFields="ProductID" DataNavigateUrlFormatString="UploadImage.aspx?Id={0}" Text="Upload Image" />
                 <asp:BoundField DataField="ProductImage" SortExpression="ProductImage" />
             </Columns>
             <EmptyDataTemplate>

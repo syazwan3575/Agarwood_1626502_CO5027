@@ -9,11 +9,10 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="MainContent" runat="server">
     <form id="form1" runat="server">
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Products.aspx">Continue Shopping</asp:HyperLink>
-        <asp:Panel ID="Panel1" runat="server">
-        
-        
+       
         <div>
-  <table align="center" cellpadding="10">
+        
+        <table align="center" cellpadding="10">
        <tr>
          <td>
              <asp:Button ID="Button1" runat="server" Text="&lt;&lt;" Width="60px" 
@@ -34,33 +33,30 @@
      </center>
 
 
-     <table align="center" style="margin-top:50px;font-size:18px" cellpadding="10" runat="server" id="pd"> 
+     <table align="left" style="margin-top:50px;font-size:18px" cellpadding="10" runat="server" id="pd"> 
       <tr>
        <td>Product name</td>
-       <td style="width: 83px">
+       <td>
            <asp:Label ID="Label2" runat="server" Font-Size="Large" ForeColor="Blue"></asp:Label>
        </td>
       </tr>
 
       <tr>
        <td>Product photo</td>
-       <td style="width: 83px">
-           <asp:Image ID="mainContent_Formview2_Image2" runat="server"  />
+       <td>
+           <asp:Image ID="Image1" runat="server" Width="100px" />
        </td>
       </tr>
 
       <tr>
        <td>Product price</td>
-       <td style="width: 83px">
+       <td>
            <asp:Label ID="Label1" runat="server" Font-Bold="False" Font-Size="Large" 
                ForeColor="Blue"></asp:Label>
        </td>
       </tr>
       </table>
-
-
     </div>
-            </asp:Panel>
     </form>
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="GoogleMap" runat="server">
